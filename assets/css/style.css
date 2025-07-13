@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=New+Amsterdam&family=Rubik+Mono+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Luckiest+Guy&family=New+Amsterdam&family=Passion+One:wght@400;700;900&family=Rubik+Mono+One&family=Sankofa+Display&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Luckiest+Guy&family=New+Amsterdam&family=Passion+One:wght@400;700;900&family=Rubik+Mono+One&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Sankofa+Display&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background-color: #222222;}
+::-webkit-scrollbar-thumb { background-color: #ffa500; border-radius: 3px;}
+::-webkit-scrollbar-thumb:hover { background-color: #ffa500; border-radius: 3px;}
+
+/*============= Constants =============*/
+#page-suptitel{
+    font-weight: 600;
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+#page-suptitel span{
+    color: #ffa500;
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    letter-spacing: 4px;
+}
+
+#btn-new{
+    padding: 7px;
+    background-color: #ffa500;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+#btn-new:hover{
+    background-color: #e59706;
+}
+
+/*============= TOP BAR HEADER =============*/
+.top-bar{
+    background: #222222;
+    height: 2.8rem;
+    padding: 0.5rem 0;
+  }
+  .top-bar a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+/*============= NAVIGATION =============*/
+nav{
+    background: #f9f9f9;
+}
+.navbar-brand img{
+    transition: 0.5s ease;
+    height: 53px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+    border: none; 
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.nav-item .nav-link{
+    font-size: 18px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover{
+    color: #ffa500;
+    box-shadow: 0px 2px 0px #ffa500;
+}
+.navbar-collapse .form-control{
+    outline: 1px solid #ffa500;
+}
+.navbar-collapse .btn{
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+}
+
+
+/*============= Home Section =============*/
+.home{
+    width: 100%;
+    height: 89.4vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../images/background_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.home .container{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .container h5{
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    text-shadow: 0px 1px 1px black;
+    letter-spacing: 2px;
+}
+.home .container h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 20px;
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    text-shadow: 0px 1px 1px black;
+    animation: changetxt 18s infinite linear;
+    letter-spacing: 2px;
+}
+@keyframes changetxt{
+    0%{content: "Egypt";}
+    10%{content: "France";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "India";}
+    50%{content: "Pakistan";}
+    60%{content: "Italy";}
+    70%{content: "Mexico";}
+    80%{content: "Germany";}
+    90%{content: "United Kingdom";}
+    100%{content: "Pares";}
+}
+.home .container p{
+    color: white;
+    font-size: .8rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 25px;
+}
+.home .container a{
+    box-shadow: 0px 0.5px 1px rgb(0, 0, 0);
+}
+
+
+/*============= Section Book =============*/
+.book{
+    background: #f9f9f9;
+}
+.book form input,
+.book form textarea{ 
+    color: black;
+    border: 1px solid #ffa500;
+    outline: none;
+}
+.book .card{
+    box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.499);;
+}
+
+/*============= Section Packages =============*/
+.packages .card{
+    box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.499);
+} 
+.packages .card .card-body h3{
+font-size: 1.6rem;
+font-weight: 700;
+font-family: "Saira Semi Condensed", sans-serif;
+font-style: normal;
+letter-spacing: 0.5px;
+}
+.packages .card .card-body p{
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(21, 21, 21, 0.708);
+}
+.packages .card .card-body h4{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+
+/*============= Section Services =============*/
+.services .card{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.499);
+}
+.services .card i{
+    font-size: 4rem;
+    color: #ffa500;
+    padding-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body p{
+    color: rgba(21, 21, 21, 0.708);
+    font-size: .9rem;
+}
+
+/*============= Section Gallary =============*/
+.gallary .card{
+    border-radius: 5px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.499);
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+
+
+/*============= About =============*/
+.about{
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 5px;
+}
+.about .card img{
+    border-radius: 5px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1PX;
+}
+.about P{
+    font-weight: 200;
+}
+
+/*============= FOOTER =============*/
+
+footer{
+    background-color: #383838;
+}
+footer img{
+height: 3.5rem;
+margin: 1.5rem auto;
+}
+footer p,
+footer a,
+.socket a{
+color: white;
+text-decoration: none;
+}
+.social{
+list-style: none;
+display: flex;
+max-width: 16rem;
+margin: 0 auto;
+padding: 0;
+}
+.social li{
+margin: 0 auto;
+font-size: 2rem;
+}
+.social a:hover{
+color: #ffa500;
+}
+  
+/*============= SOCKET =============*/
+  .socket{
+    background-color: #222222;
+  }
+  
+
+/*============= MEDIA QUERIES =============*/
+
+ /* Media Query for Mobile Devices */
+ @media (max-width: 480px) {
+    /* Home Section */
+    .navbar-brand img{
+        height: 40px;
+    }
+    .home{
+        height: 65vh;
+        background-position: 48%;
+    }
+    .home .container{
+        padding-top: 155px;
+    }
+    .home .container h5{
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    .home .container h1{
+        font-size: 1.5rem;
+        font-weight: 250;
+        margin-top: 15px;
+        letter-spacing: 1px;
+    }
+    .home .container p{
+        font-size: .5rem;
+        font-weight: 50;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+    .home .container a{
+        margin-top: 10px;
+        font-size: .88rem;
+    }
+
+
+    /* Section Services */
+    .services .card i{
+        font-size: 3rem;
+        padding-top: 15px;
+    }
+    .services .card .card-body h3{
+        font-size: .9rem;
+    }
+    .services .card .card-body p{
+        font-size: .8rem;
+    }
+    
+    .services .card{
+        max-width: 170px;
+        margin: auto;
+    }
+
+    /* About */
+    .about P{
+        font-size: .8rem;
+        font-weight: 150;
+    }
+    
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .navbar-brand img{
+        height: 40px;
+    }
+    .home{
+        height: 70vh;
+        background-position: 48%;
+    }
+    .home .container{
+        padding-top: 175px;
+    }
+    .home .container h5{
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    .home .container h1{
+        font-size: 1.5rem;
+        font-weight: 250;
+        margin-top: 15px;
+        letter-spacing: 1px;
+    }
+    .home .container p{
+        font-size: .5rem;
+        font-weight: 50;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+    .home .container a{
+        margin-top: 10px;
+        font-size: .88rem;
+    }
+
+    /* Section Services */
+    .services .card i{
+        font-size: 3.2rem;
+        padding-top: 15px;
+    }
+    .services .card .card-body h3{
+        font-size: 1.2rem;
+    }
+    .services .card .card-body p{
+    font-size: .9rem;
+    }
+
+    .services .card{
+        max-width: 260px;
+        margin: auto;
+    }
+
+    /* About */
+    .about P{
+        font-size: 1rem;
+        font-weight: 150;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar-brand img{
+        height: 40px;
+    }
+    .home{
+        height: 80vh;
+        background-position: 48% 0%;
+    }
+    .home .container h5{
+        font-size: 4.5rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+    .home .container h1{
+        font-size: 3.5rem;
+        font-weight: 350;
+        margin-top: 15px;
+        letter-spacing: 2px;
+    }
+    .home .container p{
+        font-size: 1rem;
+        font-weight: 50;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+    .home .container a{
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    /* Section Services */
+    .services .card i{
+        font-size: 3.2rem;
+        padding-top: 15px;
+    }
+    .services .card .card-body h3{
+        font-size: 1.2rem;
+    }
+    .services .card .card-body p{
+    font-size: .9rem;
+    }
+
+    .services .card{
+        max-width: 400px;
+        margin: auto;
+    }
+
+    /* About */
+    .about P{
+        font-size: .8rem;
+        font-weight: 150;
+    }
+
+    .about .card img{
+        height: 300px;
+    }
+}
+
