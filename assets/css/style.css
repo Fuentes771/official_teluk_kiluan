@@ -46,18 +46,6 @@
     background-color: #e59706;
 }
 
-/*============= TOP BAR HEADER =============*/
-.top-bar{
-    background: #222222;
-    height: 2.8rem;
-    padding: 0.5rem 0;
-  }
-  .top-bar a{
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
-  
 /*============= NAVIGATION =============*/
 nav{
     background: #f9f9f9;
@@ -103,14 +91,15 @@ nav{
 
 
 /*============= Home Section =============*/
-.home{
+.home {
     width: 100%;
     height: 89.4vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../images/background_img.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url(../images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-position: center;
 }
+
 .home .container{
     text-align: center;
     padding-top: 200px;
