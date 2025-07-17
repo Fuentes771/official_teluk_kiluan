@@ -29,9 +29,10 @@
 
 <body>
 
-  <?php
+<?php
 // navbar.php
 ?>
+
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid px-0">
