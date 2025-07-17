@@ -1,3 +1,21 @@
+<?php
+$id = $_GET['id'];
+$product = $conn->query("SELECT * FROM products WHERE id = $id")->fetch_assoc();
+?>
+<section class="container py-5">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="assets/uploads/<?= $product['image_path'] ?>" class="img-fluid">
+    </div>
+    <div class="col-md-6">
+      <h1><?= $product['name'] ?></h1>
+      <p><?= $product['description'] ?></p>
+      <!-- ... -->
+    </div>
+  </div>
+</section>
+
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
