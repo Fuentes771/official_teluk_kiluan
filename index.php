@@ -29,9 +29,10 @@
 
 <body>
 
-  <?php
-// navbar.php
+<?php
+require 'includes/config.php';
 ?>
+
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid px-0">
@@ -253,103 +254,45 @@
 <!-- Section Produk Start -->
 <section id="packages" class="mt-5 pb-5">
   <div class="container">
-
     <!-- Judul Halaman -->
     <h1 class="text-center mb-4" id="page-suptitel"><span>P</span>roduk Desa</h1>
 
-    <!-- Bagian 1: Penginapan dan Villa -->
-    <h3 class="mb-4 mt-5 judul-section fw-bold">Penginapan & Villa</h3>
-    <div class="row">
-      <!-- Cheche Guesthouse -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card shadow package-card h-100">
-          <img src="assets/images/Villa-1.png" class="card-img-top" alt="Cheche Guesthouse" style="height: 250px; object-fit: cover;">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">CHECHE GUESTHOUSE</h5>
-            <p class="card-text">Penginapan nyaman di tepi pantai Kiluan</p>
-            <h6 class="text-muted">Rp 300.000/malam</h6>
-            <a href="penginapan/cheche-guesthouse.php" class="btn btn-booknow btn-sm my-1">
-              <i class="fas fa-calendar-check me-1"></i> BOOK NOW
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- Cheche Guesthouse -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card shadow package-card h-100">
-          <img src="assets/images/Villa-2.png" class="card-img-top" alt="Cheche Guesthouse" style="height: 250px; object-fit: cover;">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">CHECHE GUESTHOUSE</h5>
-            <p class="card-text">Penginapan nyaman di tepi pantai Kiluan</p>
-            <h6 class="text-muted">Rp 300.000/malam</h6>
-            <a href="penginapan/cheche-guesthouse.php" class="btn btn-booknow btn-sm my-1">
-              <i class="fas fa-calendar-check me-1"></i> BOOK NOW
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- Cheche Guesthouse -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card shadow package-card h-100">
-          <img src="assets/images/Villa-3.png" class="card-img-top" alt="Cheche Guesthouse" style="height: 250px; object-fit: cover;">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">CHECHE GUESTHOUSE</h5>
-            <p class="card-text">Penginapan nyaman di tepi pantai Kiluan</p>
-            <h6 class="text-muted">Rp 300.000/malam</h6>
-            <a href="penginapan/cheche-guesthouse.php" class="btn btn-booknow btn-sm my-1">
-              <i class="fas fa-calendar-check me-1"></i> BOOK NOW
-            </a>
-          </div>
-        </div>
-      </div>
-
+<!-- Produk Unggulan -->
+<section id="packages" class="py-5 bg-light">
+  <div class="container">
+    <div class="section-title text-center mb-5">
+      <h2 class="fw-normal">Produk Unggulan</h2>
+      <p class="text-muted">Temukan berbagai produk dan penginapan menarik di Kiluan</p>
     </div>
 
-    <!-- Bagian 2: Produk UMKM -->
-    <h3 class="mb-4 mt-5 judul-section fw-bold">Produk UMKM</h3>
-    <div class="row">
-      <!-- Otak-otak -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="row g-4">
+      <?php
+      $productsQuery = "SELECT * FROM products ORDER BY created_at DESC LIMIT 6";
+      $productsResult = $conn->query($productsQuery);
+      
+      while($product = $productsResult->fetch_assoc()):
+      ?>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
         <div class="card shadow package-card h-100">
-          <img src="assets/images/Otak-Otak(1).png" class="card-img-top" alt="Otak-otak" style="height: 250px; object-fit: cover;">
+          <img src="assets/images/<?= htmlspecialchars($product['featured_image']) ?>" class="card-img-top" alt="<?= htmlspecialchars($product['name']) ?>" style="height: 250px; object-fit: cover;">
           <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Otak-otak Kiluan</h5>
-            <p class="card-text">Makanan khas dari ikan segar laut Kiluan</p>
-            <h6 class="text-muted">Rp 20.000/pack</h6>
-            <a href="penginapan/cheche-guesthouse.php" class="btn btn-order btn-sm my-1">
+            <h5 class="card-title fw-bold"><?= htmlspecialchars($product['name']) ?></h5>
+            <p class="card-text"><?= htmlspecialchars(substr($product['description'], 0, 100)) ?>...</p>
+            <h6 class="text-muted">Rp <?= number_format($product['price'], 0, ',', '.') ?></h6>
+            <a href="penginapan/produk.php?id=<?= $product['id'] ?>" class="btn btn-order btn-sm my-1">
               <i class="fas fa-shopping-cart me-1"></i> ORDER
             </a>
           </div>
         </div>
       </div>
-      <!-- Ikan Asap -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card shadow package-card h-100">
-          <img src="assets/images/Ikan-Asap.png" class="card-img-top" alt="Ikan Asap" style="height: 250px; object-fit: cover;">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Ikan Asap Tradisional</h5>
-            <p class="card-text">Olahan ikan asap khas Desa Kiluan Negeri</p>
-            <h6 class="text-muted">Rp 25.000/ekor</h6>
-            <a href="penginapan/cheche-guesthouse.php" class="btn btn-order btn-sm my-1">
-              <i class="fas fa-shopping-cart me-1"></i> ORDER
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- Ikan Asap -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card shadow package-card h-100">
-          <img src="assets/images/Nugget.png" class="card-img-top" alt="Ikan Asap" style="height: 250px; object-fit: cover;">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Nugget Khas Kiluan</h5>
-            <p class="card-text">Olahan daging khas Desa Kiluan</p>
-            <h6 class="text-muted">Rp 25.000/ekor</h6>
-            <a href="penginapan/cheche-guesthouse.php" class="btn btn-order btn-sm my-1">
-              <i class="fas fa-shopping-cart me-1"></i> ORDER
-            </a>
-          </div>
-        </div>
-      </div>
+      <?php endwhile; ?>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="penginapan/products.php" class="btn btn-order">Lihat Semua Produk</a>
+    </div>
+  </div>
+</section>
 
     </div>
   </div>
