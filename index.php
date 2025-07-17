@@ -214,7 +214,7 @@
         <!-- Item Galeri -->
         <div class="col-md-4 mb-4">
           <div class="card shadow-sm">
-            <img src="./assets/images/YouTube (1).png" class="card-img-top" alt="Transpalansi Terubu Karang" height="230px">
+            <img src="./assets/images/Pantai3.png" class="card-img-top" alt="Transpalansi Terubu Karang" height="230px">
             <div class="card-body">
               <small class="text-muted">29/06/2024</small>
               <h6 class="card-title fw-bold mt-2">Transpalansi Terubu Karang</h6>
@@ -225,7 +225,7 @@
         <!-- Copy item ini untuk setiap gambar -->
         <div class="col-md-4 mb-4">
           <div class="card shadow-sm">
-            <img src="./assets/images/YouTube.png" class="card-img-top" alt="Edukasi Penanaman Mangrove" height="230px">
+            <img src="./assets/images/Pantai2.png" class="card-img-top" alt="Edukasi Penanaman Mangrove" height="230px">
             <div class="card-body">
               <small class="text-muted">30/05/2017</small>
               <h6 class="card-title fw-bold mt-2">Edukasi Penanaman Mangrove</h6>
@@ -235,7 +235,7 @@
 
         <div class="col-md-4 mb-4">
           <div class="card shadow-sm">
-            <img src="./assets/images/Cette île bretonne est un avant-goût des îles Fidji -.png" class="card-img-top" alt="Pendidikan dan Pelatihan" height="230px">
+            <img src="./assets/images/Pantai1.jpg" class="card-img-top" alt="Pendidikan dan Pelatihan" height="230px">
             <div class="card-body">
               <small class="text-muted">30/05/2017</small>
               <h6 class="card-title fw-bold mt-2">Pendidikan dan Pelatihan</h6>
