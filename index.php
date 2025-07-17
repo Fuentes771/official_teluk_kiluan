@@ -197,7 +197,7 @@
         <div class="card service-card shadow-sm p-4 h-100">
           <i class="fas fa-utensils fa-3x mb-3 service-icon"></i>
           <h4 class="fw-bold mb-2">Culinary</h4>
-          <p class="text-muted">Paket makanan lokal khas Teluk Kiluan.</p>
+          <p class="text-muted">Paket makana lokal khas Teluk Kiluan.</p>
         </div>
       </div>
     </div>
