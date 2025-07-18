@@ -76,18 +76,18 @@
 }
 
 .navbar-title {
-    color: #f3efe9;
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Great Vibes', cursive;
+  color: #f3efe9;
     font-weight: 600;
-    font-size: 22px;
-    letter-spacing: 1px;
+    font-size: 25px;
+    letter-spacing: 2px;
     margin: 0;
     line-height: 1;
 }
 
 /* Logo diperbesar secara visual tanpa mengubah tinggi navbar */
 .navbar-brand img {
-    height: 70px;
+    height: 50px;
     width: auto;
     object-fit: contain;
     padding: 0;
@@ -97,13 +97,12 @@
 }
 
 .footer-logo img {
-    height: 80px;
+    height: 100px;
     width: auto;
     object-fit: contain;
     padding: 5px 0;
     transition: 0.5s ease;
 }
-
 .navbar-toggler,
 .navbar-toggler:focus {
     outline: none;
@@ -121,7 +120,7 @@
     color: #f3efe9 !important;
     letter-spacing: 0.5px;
     transition: 0.5s ease;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Belleza', sans-serif;
     padding: 0.5rem 1rem;
 }
 
@@ -134,14 +133,14 @@
 
 .navbar-collapse .form-control {
     outline: 1px solid #f3efe9;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Great Vibes', sans-serif;
 }
 
 .navbar-collapse .btn {
     background: #f3efe9;
     color: #005f73;
     border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Great Vibes', sans-serif;
 }
 
 .collapse.navbar-collapse {
@@ -198,72 +197,6 @@
     box-shadow: 0px 0.5px 1px rgb(0, 0, 0);
 }
 
-/*============= Section Book =============*/
-.book {
-    background: #f9f9f9;
-}
-.book form input,
-.book form textarea { 
-    color: black;
-    border: 1px solid #ffa500;
-    outline: none;
-}
-.book .card {
-    box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.499);
-}
-
-/*============= Section Packages =============*/
-.package-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.package-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-.package-card .card-img-top {
-  height: 250px;
-  object-fit: cover;
-}
-.package-card .btn {
-  border-radius: 30px;
-  font-weight: 600;
-}
-
-/*============= Section Services =============*/
-.services .card {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.499);
-}
-.services .card i {
-    font-size: 4rem;
-    color: #ffa500;
-    padding-top: 20px;
-}
-.services .card .card-body h3 {
-    font-weight: 600;
-}
-.services .card .card-body p {
-    color: rgba(21, 21, 21, 0.708);
-    font-size: 0.9rem;
-}
-
-/*============= Section Gallary =============*/
-.gallary .card {
-    border-radius: 5px;
-    cursor: pointer;
-}
-.gallary .card img {
-    border-radius: 5px;
-    transition: 0.5s;
-    box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.499);
-}
-.gallary .card img:hover {
-    transform: scale(1.1);
-}
 
 /*============= About =============*/
 .info-box {
@@ -282,6 +215,140 @@
   .icon-box:hover {
     transform: scale(1.1);
   }
+
+
+/*============= Section Services =============*/
+.service-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 123, 131, 0.15);
+  background-color: #f0fafa;
+}
+
+.service-card i {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover i {
+  transform: scale(1.2);
+}
+
+.service-icon {
+  color: #005f73 !important;
+}
+
+/*============= Section Gallary =============*/
+.gallary .card {
+    border-radius: 5px;
+    cursor: pointer;
+}
+.gallary .card img {
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.499);
+}
+.gallary .card img:hover {
+    transform: scale(1.1);
+}
+
+/*============= Section Packages =============*/
+#packages h3 {
+  border-left: 5px solid  #005f73;
+  padding-left: 10px;
+}
+
+#packages h3.text-success {
+  border-color:  #005f73;
+}
+
+.package-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.judul-section {
+  color: #005f73; /* misalnya oranye */
+}
+
+.btn-order {
+  background-color: #005f73; /* hijau tosca */
+  color: #fff;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-order:hover {
+  background-color: #005f73; /* warna saat hover */
+  color: #fff;
+}
+
+.btn-booknow {
+  background-color: #007d88; /* tosca gelap */
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.btn-booknow:hover {
+  background-color: #005e66;
+  color: #fff;
+}
+
+/*============= Section Location =============*/
+.location {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  padding: 60px 0;
+}
+
+.location h1#page-suptitel {
+  font-size: 2.5rem;
+  color: #005f73;
+  font-weight: bold;
+}
+
+.location .card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.location .card-body {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.location .btn-info {
+  background-color: #007b83;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.location .btn-info:hover {
+  background-color: #005f73;
+  color: #fff;
+}
 
 /*============= MEDIA QUERIES =============*/
 @media (max-width: 480px) {
@@ -378,3 +445,34 @@
     }
 }
 
+/* Detail Penginapan */
+.product-detail .sticky-top {
+  z-index: 10;
+}
+
+.product-detail .list-group-item {
+  border-left: 0;
+  border-right: 0;
+  padding-left: 0;
+}
+
+.product-detail .card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb-item a {
+  color: #005f73;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
+}
