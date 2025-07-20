@@ -254,75 +254,53 @@ require 'includes/config.php';
             </div>
           </div>
 
-          <!-- Culinary -->
-          <div class="col-md-4 mb-4">
-            <div class="card service-card shadow-sm p-4 h-100 border-0 rounded-3">
-              <div class="card-icon-wrapper mb-3">
-                <i class="bi bi-egg-fried fa-3x" style="color: #005f73;"></i>
-              </div>
-              <h4 class="fw-bold mb-2" style="color: #003845;">Kuliner</h4>
-              <p style="color: #5a7a8c;">Paket makanan lokal khas Teluk Kiluan.</p>
-            </div>
-          </div>
+      <!-- Culinary -->
+      <div class="col-md-4 mb-4">
+        <div class="card service-card shadow-sm p-4 h-100">
+          <i class="fas fa-utensils fa-3x mb-3 service-icon"></i>
+          <h4 class="fw-bold mb-2">Culinary</h4>
+          <p class="text-muted">Paket makana lokal khas Teluk Kiluan.</p>
         </div>
       </div>
-    </section>
-    <!-- Section Services End -->
+    </div>
+  </div>
+</section>
+<!-- Section Services End -->
 
-    <!-- Section Gallery Start -->
-    <section class="gallery" id="gallery" style="background: linear-gradient(135deg, #e6f7fa 0%, #ffffff 100%); padding: 60px 0;">
-      <div class="container">
-        <!-- Judul with Animation -->
-        <div class="text-center mb-4">
-          <h1 class="display-5 fw-bold kiluan-title">
-            <span class="title-char">G</span>
-            <span class="title-char">a</span>
-            <span class="title-char">l</span>
-            <span class="title-char">e</span>
-            <span class="title-char">r</span>
-            <span class="title-char">i</span>
-          </h1>
-          <div class="title-underline mx-auto" style="width: 80px;"></div>
-          <p class="text-muted mt-2">Dokumentasi Kegiatan dan Keindahan Teluk Kiluan</p>
+  <!-- Section Gallery Start -->
+  <section class="gallary" id="gallary" style="background: linear-gradient(135deg, #e0f7fa, #ffffff); padding: 60px 0;">
+    <div class="container mt-5 pb-3">
+      <h1 class="text-center mt-5 mb-2 mb-lg-4" id="page-suptitel"><span>G</span>aleri Foto</h1>
+      <div class="row">
+
+        <!-- Item Galeri -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="./assets/images/Pantai3.png" class="card-img-top" alt="Transpalansi Terubu Karang" height="230px">
+            <div class="card-body">
+              <small class="text-muted">29/06/2024</small>
+              <h6 class="card-title fw-bold mt-2">Transpalansi Terubu Karang</h6>
+            </div>
+          </div>
         </div>
 
-        <div class="row g-3 justify-content-center">
-          <!-- Item Galeri -->
-          <div class="col-sm-6 col-md-4 mb-3">
-            <div class="gallery-card">
-              <div class="gallery-img-container">
-                <img src="./assets/images/YouTube (1).png" class="gallery-img" alt="Transpalansi Terumbu Karang">
-              </div>
-              <div class="gallery-caption">
-                <small class="gallery-date">29/06/2024</small>
-                <h6 class="gallery-title">Transpalansi Terumbu Karang</h6>
-              </div>
+        <!-- Copy item ini untuk setiap gambar -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="./assets/images/Pantai2.png" class="card-img-top" alt="Edukasi Penanaman Mangrove" height="230px">
+            <div class="card-body">
+              <small class="text-muted">30/05/2017</small>
+              <h6 class="card-title fw-bold mt-2">Edukasi Penanaman Mangrove</h6>
             </div>
           </div>
+        </div>
 
-          <!-- Item Galeri -->
-          <div class="col-sm-6 col-md-4 mb-3">
-            <div class="gallery-card">
-              <div class="gallery-img-container">
-                <img src="./assets/images/YouTube.png" class="gallery-img" alt="Edukasi Penanaman Mangrove">
-              </div>
-              <div class="gallery-caption">
-                <small class="gallery-date">30/05/2017</small>
-                <h6 class="gallery-title">Edukasi Penanaman Mangrove</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item Galeri -->
-          <div class="col-sm-6 col-md-4 mb-3">
-            <div class="gallery-card">
-              <div class="gallery-img-container">
-                <img src="./assets/images/Cette île bretonne est un avant-goût des îles Fidji -.png" class="gallery-img" alt="Pendidikan dan Pelatihan">
-              </div>
-              <div class="gallery-caption">
-                <small class="gallery-date">30/05/2017</small>
-                <h6 class="gallery-title">Pendidikan dan Pelatihan</h6>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="./assets/images/Pantai1.jpg" class="card-img-top" alt="Pendidikan dan Pelatihan" height="230px">
+            <div class="card-body">
+              <small class="text-muted">30/05/2017</small>
+              <h6 class="card-title fw-bold mt-2">Pendidikan dan Pelatihan</h6>
             </div>
           </div>
         </div>

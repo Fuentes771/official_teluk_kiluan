@@ -25,7 +25,7 @@ if(!isset($pageTitle)) {
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
-
+  
   <!-- Google Font: Great Vibes -->
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
