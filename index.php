@@ -30,7 +30,7 @@
 <body>
 
 <?php
-require 'includes/config.php';
+// navbar.php
 ?>
 
 <!-- Navbar Start -->
