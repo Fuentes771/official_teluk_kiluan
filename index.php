@@ -268,9 +268,26 @@ require 'includes/config.php';
 <!-- Section Services End -->
 
   <!-- Section Gallery Start -->
-  <section class="gallary" id="gallary" style="background: linear-gradient(135deg, #e0f7fa, #ffffff); padding: 60px 0;">
-    <div class="container mt-5 pb-3">
-      <h1 class="text-center mt-5 mb-2 mb-lg-4" id="page-suptitel"><span>G</span>aleri Foto</h1>
+  <!-- Section Produk Start -->
+<section id="packages" class="mt-5 pb-5">
+  <div class="container">
+   <!-- Judul with Animation -->
+        <div class="text-center mb-4">
+          <h1 class="display-5 fw-bold kiluan-title">
+            <span class="title-char">G</span>
+            <span class="title-char">a</span>
+            <span class="title-char">l</span>
+            <span class="title-char">e</span>
+            <span class="title-char">r</span>
+            <span class="title-char">i</span>
+            <span class="title-char"> </span>
+            <span class="title-char">F</span>
+            <span class="title-char">o</span>
+            <span class="title-char">t</span>
+            <span class="title-char">o</span>
+          </h1>
+          <div class="title-underline mx-auto" style="width: 80px;"></div>
+        </div>
       <div class="row">
 
         <!-- Item Galeri -->
@@ -366,12 +383,28 @@ require 'includes/config.php';
 </section>
 <!-- Section Produk End -->
 
-<!-- Section Location Start -->
-<section class="location" id="location" style="background: linear-gradient(135deg, #e0f7fa, #ffffff); padding: 60px 0;">
+  <!-- Section Produk Start -->
+<section id="packages" class="mt-5 pb-5">
   <div class="container">
-    <h1 class="text-center mb-5 fw-bold" id="page-suptitel">
-      <span>Lokasi Desa Kiluan Negeri
-    </h1>
+   <!-- Judul with Animation -->
+        <div class="text-center mb-4">
+          <h1 class="display-5 fw-bold kiluan-title">
+            <span class="title-char">L</span>
+            <span class="title-char">o</span>
+            <span class="title-char">k</span>
+            <span class="title-char">a</span>
+            <span class="title-char">s</span>
+            <span class="title-char">i</span>
+            <span class="title-char"> </span>
+            <span class="title-char">K</span>
+            <span class="title-char">i</span>
+            <span class="title-char">l</span>
+            <span class="title-char">u</span>
+            <span class="title-char">a</span>
+            <span class="title-char">n</span>
+          </h1>
+          <div class="title-underline mx-auto" style="width: 80px;"></div>
+        </div>
 
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
