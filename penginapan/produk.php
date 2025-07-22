@@ -39,8 +39,58 @@ $images = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css Link -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- AOS Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Font Awesome Cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
     <title><?= htmlspecialchars($pageTitle) ?> - <?= htmlspecialchars($product['name']) ?></title>
 </head>
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid px-0">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="../assets/images/kiluan.png" alt="logo" class="logo-img">
+      <img src="../assets/images/unila.png" alt="logo" class="logo-img">
+      <span class="navbar-title">Umkm & Pariwisata</span>
+    </a>  
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item mx-1"><a class="nav-link active" aria-current="page" href="index.php">Beranda</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="#about">Informasi</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="#services">Pelayanan</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="#gallery">Galeri foto</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="#packages">Produk</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="#location">Lokasi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+
 
 <!-- Hero Section -->
 <section class="hero-guesthouse text-white py-5 position-relative mb-0">

@@ -32,25 +32,6 @@ if(!isset($pageTitle)) {
 </head>
 <body>
 
-<!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid px-0">
-    <a class="navbar-brand d-flex align-items-center" href="../index.php">
-      <div class="logo-combo">
-        <img src="../assets/images/kiluan.png" alt="Logo Kiluan Negeri" class="logo-img">
-        <img src="../assets/images/unila.png" alt="Logo Universitas Lampung" class="logo-img unila-logo">
-        <span class="navbar-title">Umkm & Pariwisata</span>
-      </div>
-    </a>  
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i class="fa-solid fa-bars"></i></span>
-    </button>
-  </div>
-</nav>
-<!-- Navbar End -->
-
 
 <main class="main-content">
 

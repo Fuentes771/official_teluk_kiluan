@@ -1,52 +1,74 @@
 <?php
 session_start();
-include 'koneksi.php'; // sesuaikan dengan nama file koneksi
+include 'koneksi.php';
 
+// Jika sudah login, redirect ke index
+if (isset($_SESSION['admin_id'])) {
+    header("Location: index.php");
+    exit();
+}
+
+// Generate CSRF token jika belum ada
 if (!isset($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
 
+// PROSES LOGIN
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $username = $_POST['username'];
-  $password = $_POST['password'];
-  $remember = isset($_POST['remember']); // checkbox
-
-  // Cari user berdasarkan username
-  $stmt = $conn->prepare("SELECT * FROM admin_users WHERE username = ?");
-  $stmt->bind_param("s", $username);
-  $stmt->execute();
-  $result = $stmt->get_result();
-
-  if ($result->num_rows == 1) {
-    $user = $result->fetch_assoc();
-
-    // Verifikasi password
-    if (password_verify($password, $user['password'])) {
-      $_SESSION['admin_id'] = $user['id'];
-      $_SESSION['admin_username'] = $user['username'];
-
-      // === Jika Remember Me dicentang ===
-      if ($remember) {
-        $token = bin2hex(random_bytes(32));
-        $expiry = date('Y-m-d H:i:s', strtotime('+7 days'));
-
-        // Simpan ke DB
-        $stmt = $conn->prepare("UPDATE admin_users SET remember_token = ?, token_expiry = ? WHERE id = ?");
-        $stmt->bind_param("ssi", $token, $expiry, $user['id']);
-        $stmt->execute();
-
-        // Simpan ke cookie
-        setcookie('remember_token', $token, time() + (86400 * 7), "/"); // 7 hari
-      }
-
-      header("Location: index.php");
-      exit;
-    } else {
-      echo "Password salah!";
+    // Validasi CSRF token
+    if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+        header("Location: login.php?error=csrf_invalid");
+        exit();
     }
-  } else {
-    echo "Username tidak ditemukan!";
-  }
+
+    $username = trim($_POST['username']);
+    $password = $_POST['password'];
+    $remember = isset($_POST['remember']);
+
+    // Cari user di database
+    $stmt = $conn->prepare("SELECT * FROM admin_users WHERE username = ?");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows == 1) {
+        $user = $result->fetch_assoc();
+
+        // Verifikasi password
+        if (password_verify($password, $user['password'])) {
+            // Set session
+            $_SESSION['admin_id'] = $user['id'];
+            $_SESSION['admin_username'] = $user['username'];
+
+            // Remember me
+            if ($remember) {
+                $token = bin2hex(random_bytes(32));
+                $expiry = date('Y-m-d H:i:s', strtotime('+7 days'));
+
+                // Update database
+                $stmt = $conn->prepare("UPDATE admin_users SET remember_token = ?, token_expiry = ? WHERE id = ?");
+                $stmt->bind_param("ssi", $token, $expiry, $user['id']);
+                $stmt->execute();
+
+                // Set cookie
+                setcookie('remember_token', $token, time() + (86400 * 7), "/", "", true, true);
+            }
+
+            // Redirect ke index
+            header("Location: index.php");
+            exit();
+        } else {
+            $error = "invalid_credentials";
+        }
+    } else {
+        $error = "user_not_found";
+    }
+
+    // Jika ada error, redirect dengan parameter error
+    if (isset($error)) {
+        header("Location: login.php?error=" . $error);
+        exit();
+    }
 }
 ?>
 
