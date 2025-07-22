@@ -1,9 +1,9 @@
 <?php
 // Database configuration
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'kiluan');
+define('DB_USER', 'u855675680_rinovajaya');
+define('DB_PASS', 'Generazberbaktijaya123!');
+define('DB_NAME', 'u855675680_pekonkiluan');
 
 // Start session securely
 if (session_status() === PHP_SESSION_NONE) {
