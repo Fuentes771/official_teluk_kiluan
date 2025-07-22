@@ -1,5 +1,5 @@
 <?php
-session_start();
+$isLoggedIn = isset($_SESSION['admin_id']);
 include 'koneksi.php';
 
 if (!isset($_SESSION['admin_id']) && isset($_COOKIE['remember_token'])) {
