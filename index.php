@@ -85,7 +85,7 @@
             
             <p class="fs-5 text-muted mb-4">
               Teluk Kiluan merupakan salah satu surga tersembunyi di ujung selatan Lampung yang menawarkan pesona alam
-              luar biasa. Dikelilingi oleh bukit hijau yang asri dan laut biru yang jernih, tempat ini menjadi destinasi
+              luar biasa. Dikellingi oleh bukit hijau yang asri dan laut biru yang jernih, tempat ini menjadi destinasi
               favorit untuk menyaksikan atraksi lumba-lumba liar langsung di habitatnya. Selain keindahan alamnya yang
               memukau, Teluk Kiluan juga menyuguhkan suasana tenang dan udara segar yang menyegarkan.
             </p>
