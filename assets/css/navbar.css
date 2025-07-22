@@ -1,80 +1,253 @@
-/* Main Header Styles */
-.main-header {
-  background-color: #005f73;
-  padding: 15px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+/*============= HEADER =============*/
+.navbar, footer {
+    background-color: #005f73 !important;
+    padding: 0.5rem 1rem;
 }
 
-.header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.logo-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  transition: transform 0.3s ease;
+/* Logo container for proper alignment */
+.logo-combo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.logo-link:hover {
-  transform: scale(1.03);
+/* Kiluan logo styling */
+.logo-kiluan {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transform: scale(1.15);
+    transform-origin: left center;
+    transition: transform 0.3s ease;
 }
 
-.header-logo {
-  height: 50px;
-  width: auto;
-  margin-right: 10px;
+/* Unila logo styling - slightly smaller */
+.logo-unila {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    transform: scale(1.1);
+    transform-origin: left center;
+    transition: transform 0.3s ease;
 }
 
-.logo-text {
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
+.navbar-title {
+    font-family: 'Great Vibes', cursive;
+    color: #f3efe9;
+    font-weight: 600; /* Reduced for better script font rendering */
+    font-size: 25px; /* Using rem for better responsiveness */
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 1;
+    transform: translateY(2px); /* Better vertical alignment */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
-/* Main Content Adjustment */
-.main-content {
-  padding-top: 80px;
-  min-height: calc(100vh - 150px);
+.navbar-title {
+  font-family: 'Great Vibes', cursive;
+  color: #f3efe9;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 1;
+}
+
+.footer-logo img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    padding: 5px 0;
+    transition: 0.5s ease;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: #f3efe9;
+}
+
+.nav-link, .footer-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f3efe9 !important;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+    font-family: 'Belleza', sans-serif;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.nav-link:hover, 
+.nav-link.active,
+.footer-link:hover {
+    color: #f3efe9 !important;
+    transform: translateY(-2px);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 1rem;
+    background-color: #f3efe9;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: calc(100% - 2rem);
+}
+
+.navbar-collapse .form-control {
+    outline: 1px solid #f3efe9;
+    font-family: 'Belleza', sans-serif;
+}
+
+.navbar-collapse .btn {
+    background: #f3efe9;
+    color: #005f73;
+    border-radius: 5px;
+    font-family: 'Belleza', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar-collapse .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.collapse.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .navbar-title {
+        font-size: 1.5rem;
+    }
+    
+    .logo-kiluan {
+        height: 45px;
+        transform: scale(1.1);
+    }
+    
+    .logo-unila {
+        height: 40px;
+        transform: scale(1.05);
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
 }
 
 /* ========== Footer Styles ========== */
-.site-footer {
-  background-color: #004d61; /* Warna biru laut gelap */
+.footer {
+  background-color: #005b6b;
   color: #fff;
+  padding: 40px 20px 20px;
   font-family: 'Segoe UI', sans-serif;
 }
 
-.footer-socials .social-icon {
-  display: inline-block;
-  color: white;
-  font-size: 1.5rem;
-  margin: 0 12px;
-  transition: all 0.3s ease;
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 240px;
+}
+
+.footer-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-center {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-center h4 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 6px 0;
+}
+
+.footer-links a {
+  color: #fff;
   text-decoration: none;
 }
 
-.footer-socials .social-icon:hover {
-  color: #ffc107; /* Kuning glowing saat hover */
-  transform: scale(1.2);
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .header-logo {
-    height: 40px;
-  }
-  .logo-text {
-    font-size: 1rem;
-  }
-  .main-content {
-    padding-top: 70px;
-  }
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-right h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-right a {
+  display: block;
+  color: #fff;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.footer-right i {
+  margin-right: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
 }

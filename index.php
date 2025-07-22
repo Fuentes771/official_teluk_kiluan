@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel</title>
-  <link rel="shortcut icon" href="assets/favicon.png">
+  <title>Official Teluk Kiluan</title>
+  <link rel="shortcut icon" href="assets/images/kiluan.png">
 
   <!-- css Link -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- AOS Library -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
   <!-- Font Awesome Cdn -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
@@ -22,15 +22,17 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
-  <!-- Google Font: Great Vibes -->
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 </head>
 
 <body>
 
 <?php
-// navbar.php
+require 'includes/config.php';
 ?>
 
 <!-- Navbar Start -->
@@ -52,7 +54,7 @@
         <li class="nav-item mx-1"><a class="nav-link active" aria-current="page" href="index.php">Beranda</a></li>
         <li class="nav-item mx-1"><a class="nav-link" href="#about">Informasi</a></li>
         <li class="nav-item mx-1"><a class="nav-link" href="#services">Pelayanan</a></li>
-        <li class="nav-item mx-1"><a class="nav-link" href="#gallary">Galeri foto</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="#gallery">Galeri foto</a></li>
         <li class="nav-item mx-1"><a class="nav-link" href="#packages">Produk</a></li>
         <li class="nav-item mx-1"><a class="nav-link" href="#location">Lokasi</a></li>
       </ul>
@@ -64,7 +66,7 @@
   <!-- Home Section Start -->
   <section class="home">
     <div class="container">
-      <h5>Selamat Datang di Pekon Kiluan Negeri</h5>
+      <h5>Selamat Datang di Teluk Kiluan</h5>
       <p>"Surga tersembunyi dengan pantai berpasir putih dan bukit hijau yang memukau.
           Temukan pengalaman wisata alam yang tak terlupakan di salah satu destinasi terbaik Lampung."</p>
       <a href="#about" class="btn" id="btn-new">Selengkapnya</a>
@@ -73,131 +75,191 @@
   <!-- Home Section End -->
 
   <!-- About Start -->
-  <section class="about" id="about" style="background: linear-gradient(135deg, #e0f7fa, #ffffff); padding: 60px 0;">
-      <div class="container mt-5 pb-5">
-        <h1 class="text-center mt-5 mb-2 mb-lg-4" id="page-suptitel"><span>I</span>nformasi Umum</h1>
-        <div class="row align-items-center">
-          <!-- Left: Text and General Info -->
-          <div class="col-md-7 mb-4 mb-md-0">
-            <h1 class="fw-bold mb-3" style="color: #000000;">
-              Teluk Kiluan, Surga Tersembunyi di Lampung
-            </h1>
-            
-            <p class="fs-5 text-muted mb-4">
-              Teluk Kiluan merupakan salah satu surga tersembunyi di ujung selatan Lampung yang menawarkan pesona alam
-              luar biasa. Dikellingi oleh bukit hijau yang asri dan laut biru yang jernih, tempat ini menjadi destinasi
-              favorit untuk menyaksikan atraksi lumba-lumba liar langsung di habitatnya. Selain keindahan alamnya yang
-              memukau, Teluk Kiluan juga menyuguhkan suasana tenang dan udara segar yang menyegarkan.
-            </p>
-            
-            <a href="#" class="btn" id="btn-new">Profil Lengkap</a>
+  <section id="about" class="kiluan-about">
+    <!-- Animated Background Elements -->
+    <div class="ocean-animation">
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+      <div class="wave wave-3"></div>
+    </div>
+
+    <div class="container position-relative">
+      <!-- Judul with Animation -->
+      <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold kiluan-title">
+          <span class="title-char">I</span>
+          <span class="title-char">n</span>
+          <span class="title-char">f</span>
+          <span class="title-char">o</span>
+          <span class="title-char">r</span>
+          <span class="title-char">m</span>
+          <span class="title-char">a</span>
+          <span class="title-char">s</span>
+          <span class="title-char">i</span>
+          <span class="title-char"> </span>
+          <span class="title-char">U</span>
+          <span class="title-char">m</span>
+          <span class="title-char">u</span>
+          <span class="title-char">m</span>
+        </h1>
+        <div class="title-underline mx-auto"></div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <!-- First Info Box -->
+          <div class="info-box primary-box">
+            <div class="box-content">
+              <h2 class="box-title">Teluk Kiluan, Surga Tersembunyi di Lampung</h2>
+              <p class="box-description">
+                Teluk Kiluan merupakan salah satu surga tersembunyi di ujung selatan Lampung yang menawarkan pesona alam luar biasa.
+                Dikelilingi oleh bukit hijau yang asri dan laut biru yang jernih, tempat ini menjadi destinasi favorit untuk menyaksikan
+                atraksi lumba-lumba liar langsung di habitatnya.
+              </p>
+              <button class="kiluan-btn">
+                <span>Lihat Profil Lengkap</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </div>
+            <div class="box-image">
+              <img src="assets/images/dolphin.png" alt="Teluk Kiluan">
+              <div class="image-tag">
+                <i class="bi bi-star-fill"></i> Spot Lumba-Lumba
+              </div>
+            </div>
           </div>
-          
-          <!-- Right: Data Box -->
-          <div class="col-md-5">
-            <div class="info-box p-4 rounded-3 shadow" style="background-color: #f8f9fa; border-left: 4px solid #005f73;">
-              <div class="row">
-                <!-- Original Data -->
-                <div class="col-12 mb-3">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box me-3" style="color: #005f73;">
-                      <i class="fas fa-map-marked-alt fa-2x"></i>
-                    </div>
-                    <div>
-                      <h5 class="mb-0 fw-bold">Luas Wilayah</h5>
-                      <p class="mb-0 fs-5">2.066,20 Ha</p>
-                    </div>
-                  </div>
+
+          <!-- Second Info Box (Statistics) -->
+          <div class="info-box stats-box">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-pin-map-fill"></i>
+              </div>
+              <div class="stat-value">2.066,20 Ha</div>
+              <div class="stat-label">Luas Wilayah</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <div class="stat-value">1.619</div>
+              <div class="stat-label">Populasi</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-calendar2-month"></i>
+              </div>
+              <div class="stat-value">Mei-Sep</div>
+              <div class="stat-label">Waktu Terbaik</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="stat-value">Tanggamus</div>
+              <div class="stat-label">Lokasi</div>
+            </div>
+          </div>
+
+          <!-- Third Info Box (Details) -->
+          <div class="info-box details-box">
+            <h3 class="details-title">Fakta Menarik Teluk Kiluan</h3>
+            <div class="details-grid">
+              <div class="detail-card">
+                <div class="card-icon">
+                <i class="bi bi-fish" style="display: inline-block; transform: rotate(30deg); font-size: 24px;"></i>
                 </div>
-                
-                <div class="col-12 mb-3">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box me-3" style="color: #005f73;">
-                      <i class="fas fa-users fa-2x"></i>
-                    </div>
-                    <div>
-                      <h5 class="mb-0 fw-bold">Populasi</h5>
-                      <p class="mb-0 fs-5">1.619 Jiwa</p>
-                    </div>
-                  </div>
+                <h4>Lumba-Lumba</h4>
+                <p>Habitat alami ratusan lumba-lumba yang bisa dilihat langsung di alam bebas</p>
+              </div>
+              <div class="detail-card">
+                <div class="card-icon">
+                  <i class="bi bi-umbrella-fill"></i>
                 </div>
-                
-                <div class="col-12 mb-3">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box me-3" style="color: #005f73;">
-                      <i class="fas fa-chart-area fa-2x"></i>
-                    </div>
-                    <div>
-                      <h5 class="mb-0 fw-bold">Kepadatan</h5>
-                      <p class="mb-0 fs-5">12.36%</p>
-                    </div>
-                  </div>
+                <h4>Pantai Eksotis</h4>
+                <p>Pasir putih dan air jernih dengan pemandangan bukit hijau mengelilingi</p>
+              </div>
+              <div class="detail-card">
+                <div class="card-icon">
+                  <i class="bi bi-water"></i>
                 </div>
-                
-                <!-- Additional Data -->
-                <div class="col-12 mb-3">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box me-3" style="color: #005f73;">
-                      <i class="fas fa-water fa-2x"></i>
-                    </div>
-                    <div>
-                      <h5 class="mb-0 fw-bold">Panjang Pantai</h5>
-                      <p class="mb-0 fs-5">1,619 Meter</p>
-                    </div>
-                  </div>
+                <h4>Snorkeling</h4>
+                <p>Spot snorkeling dengan terumbu karang yang masih alami dan ikan warna-warni</p>
+              </div>
+              <div class="detail-card">
+                <div class="card-icon">
+                  <i class="bi bi-sunrise"></i>
                 </div>
-                
-                <div class="col-12">
-                  <div class="d-flex align-items-center">
-                    <div class="icon-box me-3" style="color: #005f73;">
-                      <i class="fas fa-dolphin fa-2x"></i>
-                    </div>
-                    <div>
-                      <h5 class="mb-0 fw-bold">Populasi Lumba-lumba</h5>
-                      <p class="mb-0 fs-5">100+ Ekor</p>
-                    </div>
-                  </div>
-                </div>
+                <h4>Sunrise Indah</h4>
+                <p>Salah satu spot terbaik untuk melihat sunrise di Lampung Selatan</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-  </section>
-  <!-- About End -->
-
-<!-- Section Services Start -->
-<section class="services" id="services">
-  <div class="container mt-5 pb-3">
-    <h1 class="text-center mt-5 mb-4 fw-bold" id="page-suptitel">
-      <span>P</span>elayanan
-    </h1>
-
-    <div class="row text-center">
-      <!-- Transport -->
-      <div class="col-md-4 mb-4">
-        <div class="card service-card shadow-sm p-4 h-100">
-          <i class="fas fa-bus-alt fa-3x mb-3 service-icon"></i>
-          <h4 class="fw-bold mb-2">Transport</h4>
-          <p class="text-muted">Layanan antar jemput bandara, stasiun, dan pelabuhan.</p>
+      
+        <!-- Floating Icons -->
+        <div class="floating-icons">
+          <i class="bi bi-fish"></i>
+          <i class="bi bi-water"></i>
+          <i class="bi bi-tree-fill"></i>
         </div>
       </div>
+    </section>
+    <!-- About End -->
 
-      <!-- Accommodation -->
-      <div class="col-md-4 mb-4">
-        <div class="card service-card shadow-sm p-4 h-100">
-          <i class="fas fa-hotel fa-3x mb-3 service-icon"></i>
-          <h4 class="fw-bold mb-2">Accommodation</h4>
-          <p class="text-muted">Hotel, homestay, dan penginapan lokal yang nyaman.</p>
+    <!-- Section Services Start -->
+    <section class="services" id="services" style="background: white; padding: 100px 0; position: relative;">
+      <div class="container position-relative">
+        <!-- Judul with Animation -->
+        <div class="text-center mb-5">
+          <h1 class="display-4 fw-bold kiluan-title">
+            <span class="title-char">P</span>
+            <span class="title-char">e</span>
+            <span class="title-char">l</span>
+            <span class="title-char">a</span>
+            <span class="title-char">y</span>
+            <span class="title-char">a</span>
+            <span class="title-char">n</span>
+            <span class="title-char">a</span>
+            <span class="title-char">n</span>
+          </h1>
+          <div class="title-underline mx-auto"></div>
         </div>
-      </div>
+
+        <div class="row text-center">
+          <!-- Transport -->
+          <div class="col-md-4 mb-4">
+            <div class="card service-card shadow-sm p-4 h-100 border-0 rounded-3">
+              <div class="card-icon-wrapper mb-3">
+                <i class="bi bi-bus-front fa-3x" style="color: #005f73;"></i>
+              </div>
+              <h4 class="fw-bold mb-2" style="color: #003845;">Transport</h4>
+              <p style="color: #5a7a8c;">Layanan antar jemput bandara, stasiun, dan pelabuhan.</p>
+            </div>
+          </div>
+
+          <!-- Accommodation -->
+          <div class="col-md-4 mb-4">
+            <div class="card service-card shadow-sm p-4 h-100 border-0 rounded-3">
+              <div class="card-icon-wrapper mb-3">
+                <i class="bi bi-house-door fa-3x" style="color: #005f73;"></i>
+              </div>
+              <h4 class="fw-bold mb-2" style="color: #003845;">Penginapan</h4>
+              <p style="color: #5a7a8c;">Hotel, homestay, dan penginapan lokal yang nyaman.</p>
+            </div>
+          </div>
 
       <!-- Culinary -->
       <div class="col-md-4 mb-4">
         <div class="card service-card shadow-sm p-4 h-100">
           <i class="fas fa-utensils fa-3x mb-3 service-icon"></i>
           <h4 class="fw-bold mb-2">Culinary</h4>
-          <p class="text-muted">Paket makana lokal khas Teluk Kiluan.</p>
+          <p class="text-muted">Paket makanan lokal khas Teluk Kiluan.</p>
         </div>
       </div>
     </div>
@@ -242,115 +304,62 @@
             </div>
           </div>
         </div>
-
-        <!-- Tambahkan item berikutnya sesuai dengan kebutuhan -->
-        <!-- ... -->
-
       </div>
-    </div>
-  </section>
-  <!-- Section Gallery End -->
+    </section>
+    <!-- Section Gallery End -->
 
 <!-- Section Produk Start -->
 <section id="packages" class="mt-5 pb-5">
   <div class="container">
-
-    <!-- Judul Halaman -->
-    <h1 class="text-center mb-4" id="page-suptitel"><span>P</span>roduk Desa</h1>
-
-    <!-- Bagian 1: Penginapan dan Villa -->
-    <h3 class="mb-4 mt-5 judul-section fw-bold">Penginapan & Villa</h3>
-    <div class="row">
-      <!-- Cheche Guesthouse -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card shadow package-card h-100">
-          <img src="assets/images/Villa-1.png" class="card-img-top" alt="Cheche Guesthouse" style="height: 250px; object-fit: cover;">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">CHECHE GUESTHOUSE</h5>
-            <p class="card-text">Penginapan nyaman di tepi pantai Kiluan</p>
-            <h6 class="text-muted">Rp 300.000/malam</h6>
-            <a href="penginapan/cheche-guesthouse.php" class="btn btn-booknow btn-sm my-1">
-              <i class="fas fa-calendar-check me-1"></i> BOOK NOW
-            </a>
-          </div>
+   <!-- Judul with Animation -->
+        <div class="text-center mb-4">
+          <h1 class="display-5 fw-bold kiluan-title">
+            <span class="title-char">P</span>
+            <span class="title-char">r</span>
+            <span class="title-char">o</span>
+            <span class="title-char">d</span>
+            <span class="title-char">u</span>
+            <span class="title-char">k</span>
+          </h1>
+          <div class="title-underline mx-auto" style="width: 80px;"></div>
         </div>
-      </div>
-      <!-- Cheche Guesthouse -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card shadow package-card h-100">
-          <img src="assets/images/Villa-2.png" class="card-img-top" alt="Cheche Guesthouse" style="height: 250px; object-fit: cover;">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">CHECHE GUESTHOUSE</h5>
-            <p class="card-text">Penginapan nyaman di tepi pantai Kiluan</p>
-            <h6 class="text-muted">Rp 300.000/malam</h6>
-            <a href="penginapan/cheche-guesthouse.php" class="btn btn-booknow btn-sm my-1">
-              <i class="fas fa-calendar-check me-1"></i> BOOK NOW
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- Cheche Guesthouse -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card shadow package-card h-100">
-          <img src="assets/images/Villa-3.png" class="card-img-top" alt="Cheche Guesthouse" style="height: 250px; object-fit: cover;">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">CHECHE GUESTHOUSE</h5>
-            <p class="card-text">Penginapan nyaman di tepi pantai Kiluan</p>
-            <h6 class="text-muted">Rp 300.000/malam</h6>
-            <a href="penginapan/cheche-guesthouse.php" class="btn btn-booknow btn-sm my-1">
-              <i class="fas fa-calendar-check me-1"></i> BOOK NOW
-            </a>
-          </div>
-        </div>
-      </div>
 
+<!-- Produk Unggulan -->
+<section id="packages" class="py-5 bg-light">
+  <div class="container">
+    <div class="section-title text-center mb-5">
+      <h2 class="fw-normal">Produk Unggulan</h2>
+      <p class="text-muted">Temukan berbagai produk dan penginapan menarik di Kiluan</p>
     </div>
 
-    <!-- Bagian 2: Produk UMKM -->
-    <h3 class="mb-4 mt-5 judul-section fw-bold">Produk UMKM</h3>
-    <div class="row">
-      <!-- Otak-otak -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="row g-4">
+      <?php
+      $productsQuery = "SELECT * FROM products ORDER BY created_at DESC LIMIT 6";
+      $productsResult = $conn->query($productsQuery);
+      
+      while($product = $productsResult->fetch_assoc()):
+      ?>
+      <div class="col-md-4 mb-4" data-aos="fade-up">
         <div class="card shadow package-card h-100">
-          <img src="assets/images/Otak-Otak(1).png" class="card-img-top" alt="Otak-otak" style="height: 250px; object-fit: cover;">
+          <img src="assets/images/<?= htmlspecialchars($product['featured_image']) ?>" class="card-img-top" alt="<?= htmlspecialchars($product['name']) ?>" style="height: 250px; object-fit: cover;">
           <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Otak-otak Kiluan</h5>
-            <p class="card-text">Makanan khas dari ikan segar laut Kiluan</p>
-            <h6 class="text-muted">Rp 20.000/pack</h6>
-            <a href="penginapan/cheche-guesthouse.php" class="btn btn-order btn-sm my-1">
+            <h5 class="card-title fw-bold"><?= htmlspecialchars($product['name']) ?></h5>
+            <p class="card-text"><?= htmlspecialchars(substr($product['description'], 0, 100)) ?>...</p>
+            <h6 class="text-muted">Rp <?= number_format($product['price'], 0, ',', '.') ?></h6>
+            <a href="penginapan/produk.php?id=<?= $product['id'] ?>" class="btn btn-order btn-sm my-1">
               <i class="fas fa-shopping-cart me-1"></i> ORDER
             </a>
           </div>
         </div>
       </div>
-      <!-- Ikan Asap -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card shadow package-card h-100">
-          <img src="assets/images/Ikan-Asap.png" class="card-img-top" alt="Ikan Asap" style="height: 250px; object-fit: cover;">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Ikan Asap Tradisional</h5>
-            <p class="card-text">Olahan ikan asap khas Desa Kiluan Negeri</p>
-            <h6 class="text-muted">Rp 25.000/ekor</h6>
-            <a href="penginapan/cheche-guesthouse.php" class="btn btn-order btn-sm my-1">
-              <i class="fas fa-shopping-cart me-1"></i> ORDER
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- Ikan Asap -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card shadow package-card h-100">
-          <img src="assets/images/Nugget.png" class="card-img-top" alt="Ikan Asap" style="height: 250px; object-fit: cover;">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Nugget Khas Kiluan</h5>
-            <p class="card-text">Olahan daging khas Desa Kiluan</p>
-            <h6 class="text-muted">Rp 25.000/ekor</h6>
-            <a href="penginapan/cheche-guesthouse.php" class="btn btn-order btn-sm my-1">
-              <i class="fas fa-shopping-cart me-1"></i> ORDER
-            </a>
-          </div>
-        </div>
-      </div>
+      <?php endwhile; ?>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="penginapan/semua-produk.php" class="btn btn-order">Lihat Semua Produk</a>
+    </div>
+  </div>
+</section>
 
     </div>
   </div>
@@ -391,36 +400,7 @@
 </section>
 <!-- Section Location End -->
 
-  <!-- Start Footer -->
-  <footer class="footer-clean">
-    <div class="container py-4">
-      <div class="row align-items-start">
-        <div class="col-md-4 text-start mb-3 mb-md-0">
-          <div class="footer-logo">
-            <img src="assets/images/logo.png" alt="logo-footer">
-          </div>
-        </div>
-        <div class="col-md-8 text-md-start text-center">
-          <p class="footer-text mb-3">
-            Teluk Kiluan adalah surga tersembunyi di Lampung dengan keindahan alam yang memukau. Temukan pengalaman
-            wisata yang tak terlupakan bersama kami!
-          </p>
-          <div class="social-contact d-flex flex-wrap align-items-center gap-3">
-            <div class="d-flex align-items-center gap-2">
-              <ion-icon name="logo-instagram"></ion-icon><span>@telukkiluan</span>
-            </div>
-            <div class="d-flex align-items-center gap-2">
-              <ion-icon name="logo-facebook"></ion-icon><span>Teluk Kiluan Official</span>
-            </div>
-            <div class="d-flex align-items-center gap-2">
-              <ion-icon name="logo-youtube"></ion-icon><span>Kiluan Channel</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
+<?php include 'includes/footer.php'; ?>
 
   <!-- Bootstrap JS -->
   <script src="assets/js/bootstrap.min.js"></script>
@@ -436,6 +416,29 @@
     once: true
   });
   </script>
+
+  <script>
+  // Add some basic interactivity
+  document.addEventListener('DOMContentLoaded', function() {
+    // Title character animation
+    const titleChars = document.querySelectorAll('.title-char');
+    titleChars.forEach((char, index) => {
+      char.style.transitionDelay = `${index * 0.05}s`;
+    });
+    
+    // Button hover effects
+    const buttons = document.querySelectorAll('.kiluan-btn');
+    buttons.forEach(button => {
+      button.addEventListener('mouseenter', function() {
+        this.querySelector('svg').style.transform = 'translateX(5px)';
+      });
+      
+      button.addEventListener('mouseleave', function() {
+        this.querySelector('svg').style.transform = 'translateX(0)';
+      });
+    });
+  });
+</script>
 
 </body>
 
