@@ -655,59 +655,89 @@
   }
   
 /*============= Section Gallary =============*/
-.gallery .gallery-card {
-    border-radius: 5px;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+/* Animasi untuk judul */
+  .title-char {
+    display: inline-block;
+    transition: transform 0.3s ease;
   }
-  
-  .gallery .gallery-img {
-    border-radius: 5px;
-    transition: 0.5s;
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Enhanced Interactive Effects */
-  .gallery .gallery-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 20px rgba(0, 95, 115, 0.2);
-  }
-  
-  .gallery .gallery-card:hover .gallery-img {
-    transform: scale(1.08);
-    box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.4);
-  }
-  
-  .gallery .gallery-caption {
-    padding: 15px;
-    background: white;
-    transition: all 0.3s ease;
-  }
-  
-  .gallery .gallery-card:hover .gallery-caption {
-    background: #f8f9fa;
-  }
-  
-  .gallery .gallery-title {
-    font-weight: bold;
-    margin-top: 5px;
+  .title-char:hover {
+    transform: translateY(-5px);
     color: #005f73;
+  }
+  .title-underline {
+    height: 3px;
+    background: #005f73;
+    transition: width 0.5s ease;
+  }
+  .kiluan-title:hover + .title-underline {
+    width: 120px !important;
+  }
+
+  /* Efek untuk card gallery */
+  .gallery-card {
     transition: all 0.3s ease;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
   }
-  
-  .gallery .gallery-card:hover .gallery-title {
-    color: #0088a3;
+  .gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 95, 115, 0.2) !important;
   }
-  
-  .gallery .gallery-date {
-    color: #6c757d;
-    font-size: 0.85rem;
+
+  /* Container gambar dengan overlay */
+  .card-img-container {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .gallery-card:hover .card-img-top {
+    transform: scale(1.05);
+  }
+
+  /* Overlay gambar */
+  .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 95, 115, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .gallery-card:hover .img-overlay {
+    opacity: 1;
+  }
+
+  /* Efek teks tanggal */
+  .date-text {
+    transition: color 0.3s ease;
+  }
+  .gallery-card:hover .date-text {
+    color: #005f73 !important;
+  }
+
+  /* Garis bawah judul card */
+  .card-footer-underline {
+    width: 0;
+    height: 2px;
+    background: #005f73;
+    transition: width 0.3s ease;
+    margin-top: 10px;
+  }
+  .gallery-card:hover .card-footer-underline {
+    width: 100%;
   }
 
   /* Title Styles */
