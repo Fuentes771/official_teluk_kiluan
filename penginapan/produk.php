@@ -91,7 +91,6 @@ $images = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 </nav>
 <!-- Navbar End -->
 
-
 <!-- Hero Section -->
 <section class="hero-guesthouse text-white py-5 position-relative mb-0">
   <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5); z-index: 1;"></div>

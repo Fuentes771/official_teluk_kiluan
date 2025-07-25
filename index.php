@@ -117,13 +117,26 @@ require 'includes/config.php';
                 Dikelilingi oleh bukit hijau yang asri dan laut biru yang jernih, tempat ini menjadi destinasi favorit untuk menyaksikan
                 atraksi lumba-lumba liar langsung di habitatnya.
               </p>
-              <button class="kiluan-btn">
-                <span>Lihat Profil Lengkap</span>
-                <svg viewBox="0 0 13 10" height="10px" width="15px">
-                  <path d="M1,5 L11,5"></path>
-                  <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
-              </button>
+              <div class="button-group">
+                <button class="kiluan-btn" onclick="window.open('http://monitoring.pekontelukkiluan.com', '_blank')">
+                  <span>Monitoring Teluk Kiluan</span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </button>
+               <a href="info-selengkapnya.php" class="kiluan-btn" style="text-decoration: none;">
+                  <span>Lihat Profil Lengkap</span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </a>
+                <button class="kiluan-btn" onclick="window.open('https://www.instagram.com/kiluan_negeri/', '_blank')">
+                  <span>Instagram</span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+              </div>
             </div>
             <div class="box-image">
               <img src="assets/images/dolphin.png" alt="Teluk Kiluan">
@@ -238,7 +251,7 @@ require 'includes/config.php';
               <div class="card-icon-wrapper mb-3">
                 <i class="bi bi-bus-front fa-3x" style="color: #005f73;"></i>
               </div>
-              <h4 class="fw-bold mb-2" style="color: #003845;">Transport</h4>
+              <h4 class="fw-bold mb-2" style="color: #005f73;">Transport</h4>
               <p style="color: #5a7a8c;">Layanan antar jemput bandara, stasiun, dan pelabuhan.</p>
             </div>
           </div>
@@ -249,88 +262,106 @@ require 'includes/config.php';
               <div class="card-icon-wrapper mb-3">
                 <i class="bi bi-house-door fa-3x" style="color: #005f73;"></i>
               </div>
-              <h4 class="fw-bold mb-2" style="color: #003845;">Penginapan</h4>
+              <h4 class="fw-bold mb-2" style="color: #005f73;">Penginapan</h4>
               <p style="color: #5a7a8c;">Hotel, homestay, dan penginapan lokal yang nyaman.</p>
             </div>
           </div>
 
-      <!-- Culinary -->
+          <!-- Culinary -->
+           <div class="col-md-4 mb-4">
+            <div class="card service-card shadow-sm p-4 h-100 border-0 rounded-3">
+              <div class="card-icon-wrapper mb-3">
+                <i class="fas fa-utensils fa-3x" style="color: #005f73;"></i>
+              </div>
+              <h4 class="fw-bold mb-2" style="color: #005f73;">Kuliner</h4>
+              <p style="color: #5a7a8c;">Paket makanan lokal khas Teluk Kiluan.</p>
+            </div>
+          </div>
+    </section>
+    <!-- Section Services End -->
+
+    <!-- Section Gallery Start -->
+<section class="gallery" id="services" style="background: white; padding: 100px 0; position: relative;">
+  <div class="container position-relative">
+    <!-- Judul with Animation -->
+    <div class="text-center mb-5">
+      <h1 class="display-4 fw-bold kiluan-title">
+        <span class="title-char">G</span>
+        <span class="title-char">a</span>
+        <span class="title-char">l</span>
+        <span class="title-char">e</span>
+        <span class="title-char">r</span>
+        <span class="title-char">i</span>
+        <span class="title-char"> </span>
+        <span class="title-char">F</span>
+        <span class="title-char">o</span>
+        <span class="title-char">t</span>
+        <span class="title-char">o</span>
+      </h1>
+      <div class="title-underline mx-auto" style="width: 80px;"></div>
+    </div>
+
+    <div class="row">
+      <!-- Item Galeri 1 -->
       <div class="col-md-4 mb-4">
-        <div class="card service-card shadow-sm p-4 h-100">
-          <i class="fas fa-utensils fa-3x mb-3 service-icon"></i>
-          <h4 class="fw-bold mb-2">Culinary</h4>
-          <p class="text-muted">Paket makanan lokal khas Teluk Kiluan.</p>
+        <div class="card shadow-sm gallery-card">
+          <div class="card-img-container">
+            <img src="./assets/images/Pantai3.png" class="card-img-top" alt="Transpalansi Terubu Karang">
+            <div class="img-overlay">
+              <button class="btn btn-sm btn-outline-light view-btn">Lihat Detail</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <small class="text-muted date-text">29/06/2024</small>
+            <h6 class="card-title fw-bold mt-2">Transpalansi Terubu Karang</h6>
+            <div class="card-footer-underline"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item Galeri 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm gallery-card">
+          <div class="card-img-container">
+            <img src="./assets/images/Pantai2.png" class="card-img-top" alt="Edukasi Penanaman Mangrove">
+            <div class="img-overlay">
+              <button class="btn btn-sm btn-outline-light view-btn">Lihat Detail</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <small class="text-muted date-text">30/05/2017</small>
+            <h6 class="card-title fw-bold mt-2">Edukasi Penanaman Mangrove</h6>
+            <div class="card-footer-underline"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item Galeri 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm gallery-card">
+          <div class="card-img-container">
+            <img src="./assets/images/Pantai1.jpg" class="card-img-top" alt="Pendidikan dan Pelatihan">
+            <div class="img-overlay">
+              <button class="btn btn-sm btn-outline-light view-btn">Lihat Detail</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <small class="text-muted date-text">30/05/2017</small>
+            <h6 class="card-title fw-bold mt-2">Pendidikan dan Pelatihan</h6>
+            <div class="card-footer-underline"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- Section Services End -->
-
-  <!-- Section Gallery Start -->
-  <!-- Section Produk Start -->
-<section id="packages" class="mt-5 pb-5">
-  <div class="container">
-   <!-- Judul with Animation -->
-        <div class="text-center mb-4">
-          <h1 class="display-5 fw-bold kiluan-title">
-            <span class="title-char">G</span>
-            <span class="title-char">a</span>
-            <span class="title-char">l</span>
-            <span class="title-char">e</span>
-            <span class="title-char">r</span>
-            <span class="title-char">i</span>
-            <span class="title-char"> </span>
-            <span class="title-char">F</span>
-            <span class="title-char">o</span>
-            <span class="title-char">t</span>
-            <span class="title-char">o</span>
-          </h1>
-          <div class="title-underline mx-auto" style="width: 80px;"></div>
-        </div>
-      <div class="row">
-
-        <!-- Item Galeri -->
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm">
-            <img src="./assets/images/Pantai3.png" class="card-img-top" alt="Transpalansi Terubu Karang" height="230px">
-            <div class="card-body">
-              <small class="text-muted">29/06/2024</small>
-              <h6 class="card-title fw-bold mt-2">Transpalansi Terubu Karang</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Copy item ini untuk setiap gambar -->
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm">
-            <img src="./assets/images/Pantai2.png" class="card-img-top" alt="Edukasi Penanaman Mangrove" height="230px">
-            <div class="card-body">
-              <small class="text-muted">30/05/2017</small>
-              <h6 class="card-title fw-bold mt-2">Edukasi Penanaman Mangrove</h6>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm">
-            <img src="./assets/images/Pantai1.jpg" class="card-img-top" alt="Pendidikan dan Pelatihan" height="230px">
-            <div class="card-body">
-              <small class="text-muted">30/05/2017</small>
-              <h6 class="card-title fw-bold mt-2">Pendidikan dan Pelatihan</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section Gallery End -->
 
 <!-- Section Produk Start -->
-<section id="packages" class="mt-5 pb-5">
-  <div class="container">
+<section class="packages" id="services" style="background: white; padding: 100px 0; position: relative;">
+      <div class="container position-relative">
    <!-- Judul with Animation -->
         <div class="text-center mb-4">
-          <h1 class="display-5 fw-bold kiluan-title">
+          <h1 class="display-4 fw-bold kiluan-title">
             <span class="title-char">P</span>
             <span class="title-char">r</span>
             <span class="title-char">o</span>
@@ -383,12 +414,12 @@ require 'includes/config.php';
 </section>
 <!-- Section Produk End -->
 
-  <!-- Section Produk Start -->
-<section id="packages" class="mt-5 pb-5">
-  <div class="container">
+  <!-- Section Location Start -->
+<section class="location" id="services" style="background: white; padding: 100px 0; position: relative;">
+      <div class="container position-relative">
    <!-- Judul with Animation -->
         <div class="text-center mb-4">
-          <h1 class="display-5 fw-bold kiluan-title">
+          <h1 class="display-4 fw-bold kiluan-title">
             <span class="title-char">L</span>
             <span class="title-char">o</span>
             <span class="title-char">k</span>

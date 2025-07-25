@@ -583,6 +583,16 @@
     }
   }
 
+  .button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .button-group .kiluan-btn {
+    flex: 1;
+  }
+
 /*============= Section Services =============*/
   /* Service Section Styles */
   .service-card {
@@ -700,6 +710,34 @@
     font-size: 0.85rem;
   }
 
+  /* Title Styles */
+  .kiluan-title {
+    color: #005f73;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .kiluan-title span.title-char {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  .kiluan-title:hover span.title-char {
+    transform: translateY(-5px);
+    color: #0088a3;
+  }
+  
+  .title-underline {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #005f73, #0088a3);
+    margin-top: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  .kiluan-title:hover ~ .title-underline {
+    width: 200px;
+  }
+
 /*============= Section Packages =============*/
 #packages h3 {
   border-left: 5px solid  #005f73;
@@ -750,6 +788,34 @@
   color: #fff;
 }
 
+/* Title Styles */
+  .kiluan-title {
+    color: #005f73;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .kiluan-title span.title-char {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  .kiluan-title:hover span.title-char {
+    transform: translateY(-5px);
+    color: #0088a3;
+  }
+  
+  .title-underline {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #005f73, #0088a3);
+    margin-top: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  .kiluan-title:hover ~ .title-underline {
+    width: 200px;
+  }
+
 /*============= Section Location =============*/
 .location {
   background: linear-gradient(135deg, #e0f7fa, #ffffff);
@@ -793,6 +859,144 @@
   background-color: #005f73;
   color: #fff;
 }
+
+/* Title Styles */
+  .kiluan-title {
+    color: #005f73;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .kiluan-title span.title-char {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  .kiluan-title:hover span.title-char {
+    transform: translateY(-5px);
+    color: #0088a3;
+  }
+  
+  .title-underline {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #005f73, #0088a3);
+    margin-top: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  .kiluan-title:hover ~ .title-underline {
+    width: 200px;
+  }
+
+/*============= Section Informasi =============*/
+   body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .profile-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .section-title {
+            color: #005f73;
+            border-bottom: 3px solid  #005f73;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .feature-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .fact-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .fact-icon {
+            font-size: 2rem;
+            color: #005f73;
+            margin-bottom: 1rem;
+        }
+        
+        .back-btn {
+            background-color:  #005f73;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 2rem;
+            transition: background-color 0.3s;
+        }
+        
+        .back-btn:hover {
+            background-color: #004445;
+            color: white;
+        }
+        
+        .gallery-img {
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.03);
+        }
+        
+        .staff-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .staff-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .staff-position {
+            color: #6c757d;
+            font-weight: 500;
+        }
+        
+        .table-responsive {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .table thead {
+            background-color: #005f73;
+            color: white;
+        }
 
 /*============= MEDIA QUERIES =============*/
 @media (max-width: 480px) {
