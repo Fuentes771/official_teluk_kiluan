@@ -308,7 +308,7 @@ require 'includes/config.php';
           <div class="card-img-container">
             <img src="./assets/images/Pantai3.png" class="card-img-top" alt="Transpalansi Terubu Karang">
             <div class="img-overlay">
-              <button class="btn btn-sm btn-outline-light view-btn">Lihat Detail</button>
+               <a href="detail-galeri/gigihiu.php?id=1" class="btn btn-sm btn-outline-light view-btn">Lihat Detail</a>
             </div>
           </div>
           <div class="card-body">
