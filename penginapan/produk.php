@@ -209,7 +209,7 @@ Apakah tersedia untuk tanggal tersebut?
 Terima kasih.`;
 
   const encodedMessage = encodeURIComponent(message);
-  window.open(`https://wa.me/<?= $product['phone'] ?>?text=${encodedMessage}`, '_blank');
+  window.open(`https://wa.me/+62<?= $product['phone'] ?>?text=${encodedMessage}`, '_blank');
 }
 </script>
 

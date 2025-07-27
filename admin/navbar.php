@@ -3,7 +3,7 @@
 
 // Cek session untuk menentukan menu yang ditampilkan
 $isLoggedIn = isset($_SESSION['admin_id']);
-$isDeveloper = $isLoggedIn && $_SESSION['admin_role'] === 'developer';
+$isDeveloper = $isLoggedIn && $_SESSION['admin_role'] === 'admin';
 $currentPage = basename($_SERVER['PHP_SELF']);
 ?>
 <!DOCTYPE html>
