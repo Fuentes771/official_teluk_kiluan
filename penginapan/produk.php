@@ -79,12 +79,12 @@ $images = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item mx-1"><a class="nav-link active" aria-current="page" href="index.php">Beranda</a></li>
-        <li class="nav-item mx-1"><a class="nav-link" href="#about">Informasi</a></li>
-        <li class="nav-item mx-1"><a class="nav-link" href="#services">Pelayanan</a></li>
-        <li class="nav-item mx-1"><a class="nav-link" href="#gallery">Galeri foto</a></li>
-        <li class="nav-item mx-1"><a class="nav-link" href="#packages">Produk</a></li>
-        <li class="nav-item mx-1"><a class="nav-link" href="#location">Lokasi</a></li>
+        <li class="nav-item mx-1"><a class="nav-link active" aria-current="page" href="../index.php">Beranda</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="../index.php#about">Informasi</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="../index.php#services">Pelayanan</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="../index.php#gallery">Galeri foto</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="../index.php#packages">Produk</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="../index.php#location">Lokasi</a></li>
       </ul>
     </div>
   </div>

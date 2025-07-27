@@ -1,14 +1,46 @@
+<?php
+require 'includes/header.php';
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Lengkap Desa Teluk Kiluan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css?v=2" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css?v=2">
-    <link href="assets/css/style.css?v=2" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid px-0">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="assets/images/kiluan.png" alt="logo" class="logo-img">
+      <img src="assets/images/unila.png" alt="logo" class="logo-img">
+      <span class="navbar-title">Umkm & Pariwisata</span>
+    </a>  
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item mx-1"><a class="nav-link active" aria-current="page" href="index.php">Beranda</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="#about">Informasi</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="#services">Pelayanan</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="#gallery">Galeri foto</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="#packages">Produk</a></li>
+        <li class="nav-item mx-1"><a class="nav-link" href="#location">Lokasi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+
     <!-- Header Section -->
     <div class="profile-header">
         <div class="container">
@@ -28,75 +60,6 @@
                 </div>
                 <div class="col-md-6">
                     <p>Desa ini memiliki luas wilayah 2.066,20 Ha dengan jumlah penduduk 1.619 jiwa (data 2023). Sebagian besar masyarakat bekerja sebagai nelayan, petani, dan bergerak di sektor pariwisata.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Government Structure Section -->
-        <section class="mb-5">
-            <h2 class="section-title">Struktur Pemerintahan Desa</h2>
-            
-            <!-- Kepala Desa -->
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <div class="fact-box">
-                        <h3 class="text-center mb-4"><i class="bi bi-person-badge"></i> Kepala Desa</h3>
-                        <div class="row align-items-center">
-                            <div class="col-md-4 text-center">
-                                <img src="assets/images/Kepala-Pekon.png" alt="Kepala Desa" 
-                                    class="img-fluid mb-3" 
-                                    style="width: 250px; height: 300px; object-fit: cover; border-radius: 15px; border: 3px solid #005f73;">
-                            </div>
-                            <div class="col-md-8">
-                                <h4>H. Ahmad Fauzi, S.Pd.</h4>
-                                <p class="staff-position">Kepala Desa Teluk Kiluan</p>
-                                <p>Masa Jabatan: 2019-2025</p>
-                                <p>Latar Belakang: Mantan guru SMP Negeri 2 Kelumbayan, aktif dalam pengembangan pariwisata berbasis masyarakat sejak 2010.</p>
-                                <p>Visi: "Mewujudkan Teluk Kiluan sebagai desa mandiri berbasis wisata ekologi yang berkelanjutan"</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Perangkat Desa -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="fact-box">
-                        <h3 class="text-center mb-4"><i class="bi bi-people-fill"></i> Perangkat Desa</h3>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="staff-card">
-                                    <img src="https://via.placeholder.com/300x200?text=Sekretaris+Desa" class="card-img-top staff-img" alt="Sekretaris Desa">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Drs. Muhammad Arifin</h5>
-                                        <p class="staff-position">Sekretaris Desa</p>
-                                        <p class="card-text">Bertanggung jawab atas administrasi pemerintahan desa dan dokumentasi kegiatan.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="staff-card">
-                                    <img src="https://via.placeholder.com/300x200?text=Kaur+Keuangan" class="card-img-top staff-img" alt="Kaur Keuangan">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Siti Aminah, S.E.</h5>
-                                        <p class="staff-position">Kaur Keuangan</p>
-                                        <p class="card-text">Mengelola keuangan desa dan pelaporan anggaran.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="staff-card">
-                                    <img src="https://via.placeholder.com/300x200?text=Kasi+Pemerintahan" class="card-img-top staff-img" alt="Kasi Pemerintahan">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Joko Susilo, S.Sos.</h5>
-                                        <p class="staff-position">Kasi Pemerintahan</p>
-                                        <p class="card-text">Menangani urusan administrasi kependudukan dan catatan sipil.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -166,45 +129,6 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
-            </div>
-        </section>
-
-        <!-- BPD Section -->
-        <section class="mb-5">
-            <h2 class="section-title">Badan Permusyawaratan Desa (BPD)</h2>
-            <div class="fact-box">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="text-center p-3">
-                            <img src="https://via.placeholder.com/150?text=Ketua+BPD" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
-                            <h5>Drs. Hasan Basri</h5>
-                            <p class="staff-position">Ketua BPD</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="text-center p-3">
-                            <img src="https://via.placeholder.com/150?text=Wakil+BPD" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
-                            <h5>M. Yusuf, S.Pd.</h5>
-                            <p class="staff-position">Wakil Ketua</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="text-center p-3">
-                            <img src="https://via.placeholder.com/150?text=Sekretaris+BPD" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
-                            <h5>Rina Marliana, S.H.</h5>
-                            <p class="staff-position">Sekretaris</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <h5>Anggota BPD:</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">1. Ahmad Fadilah - Perwakilan Dusun I</li>
-                        <li class="list-group-item">2. Siti Fatimah - Perwakilan Perempuan</li>
-                        <li class="list-group-item">3. Junaedi - Perwakilan Pemuda</li>
-                        <li class="list-group-item">4. H. Abdul Rahman - Perwakilan Tokoh Agama</li>
-                    </ul>
                 </div>
             </div>
         </section>

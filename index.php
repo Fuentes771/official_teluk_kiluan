@@ -281,7 +281,7 @@ require 'includes/config.php';
     <!-- Section Services End -->
 
     <!-- Section Gallery Start -->
-<section class="gallery" id="services" style="background: white; padding: 100px 0; position: relative;">
+<section class="gallery" id="gallery" style="background: white; padding: 100px 0; position: relative;">
   <div class="container position-relative">
     <!-- Judul with Animation -->
     <div class="text-center mb-5">
