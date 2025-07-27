@@ -502,6 +502,7 @@ require 'includes/config.php';
       });
     });
   });
+  </script>
 
   <script>
   // Animasi saat halaman dimuat
@@ -534,40 +535,7 @@ require 'includes/config.php';
     }
   `;
   document.head.appendChild(style);
-</script>
-
-<script>
-  // Animasi saat halaman dimuat
-  document.addEventListener('DOMContentLoaded', function() {
-    // Animasi judul karakter per karakter
-    const titleChars = document.querySelectorAll('.title-char');
-    titleChars.forEach((char, index) => {
-      setTimeout(() => {
-        char.style.animation = 'bounceIn 0.5s forwards';
-      }, index * 100);
-    });
-
-    // Efek hover untuk semua card
-    const cards = document.querySelectorAll('.gallery-card');
-    cards.forEach(card => {
-      card.addEventListener('click', function() {
-        // Tambahkan aksi ketika card diklik
-        console.log('Card clicked:', this.querySelector('.card-title').textContent);
-      });
-    });
-  });
-
-  // Tambahkan keyframes untuk animasi
-  const style = document.createElement('style');
-  style.innerHTML = `
-    @keyframes bounceIn {
-      0% { transform: translateY(20px); opacity: 0; }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-  `;
-  document.head.appendChild(style);
-</script>
+  </script>
 </body>
 
 </html>
