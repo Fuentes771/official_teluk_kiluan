@@ -583,6 +583,16 @@
     }
   }
 
+  .button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .button-group .kiluan-btn {
+    flex: 1;
+  }
+
 /*============= Section Services =============*/
   /* Service Section Styles */
   .service-card {
@@ -645,59 +655,117 @@
   }
   
 /*============= Section Gallary =============*/
-.gallery .gallery-card {
-    border-radius: 5px;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+/* Animasi untuk judul */
+  .title-char {
+    display: inline-block;
+    transition: transform 0.3s ease;
   }
-  
-  .gallery .gallery-img {
-    border-radius: 5px;
-    transition: 0.5s;
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Enhanced Interactive Effects */
-  .gallery .gallery-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 20px rgba(0, 95, 115, 0.2);
-  }
-  
-  .gallery .gallery-card:hover .gallery-img {
-    transform: scale(1.08);
-    box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.4);
-  }
-  
-  .gallery .gallery-caption {
-    padding: 15px;
-    background: white;
-    transition: all 0.3s ease;
-  }
-  
-  .gallery .gallery-card:hover .gallery-caption {
-    background: #f8f9fa;
-  }
-  
-  .gallery .gallery-title {
-    font-weight: bold;
-    margin-top: 5px;
+  .title-char:hover {
+    transform: translateY(-5px);
     color: #005f73;
+  }
+  .title-underline {
+    height: 3px;
+    background: #005f73;
+    transition: width 0.5s ease;
+  }
+  .kiluan-title:hover + .title-underline {
+    width: 120px !important;
+  }
+
+  /* Efek untuk card gallery */
+  .gallery-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+  }
+  .gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 95, 115, 0.2) !important;
+  }
+
+  /* Container gambar dengan overlay */
+  .card-img-container {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .gallery-card:hover .card-img-top {
+    transform: scale(1.05);
+  }
+
+  /* Overlay gambar */
+  .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 95, 115, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .gallery-card:hover .img-overlay {
+    opacity: 1;
+  }
+
+  /* Efek teks tanggal */
+  .date-text {
+    transition: color 0.3s ease;
+  }
+  .gallery-card:hover .date-text {
+    color: #005f73 !important;
+  }
+
+  /* Garis bawah judul card */
+  .card-footer-underline {
+    width: 0;
+    height: 2px;
+    background: #005f73;
+    transition: width 0.3s ease;
+    margin-top: 10px;
+  }
+  .gallery-card:hover .card-footer-underline {
+    width: 100%;
+  }
+
+  /* Title Styles */
+  .kiluan-title {
+    color: #005f73;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .kiluan-title span.title-char {
+    display: inline-block;
     transition: all 0.3s ease;
   }
   
-  .gallery .gallery-card:hover .gallery-title {
+  .kiluan-title:hover span.title-char {
+    transform: translateY(-5px);
     color: #0088a3;
   }
   
-  .gallery .gallery-date {
-    color: #6c757d;
-    font-size: 0.85rem;
+  .title-underline {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #005f73, #0088a3);
+    margin-top: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  .kiluan-title:hover ~ .title-underline {
+    width: 200px;
   }
 
 /*============= Section Packages =============*/
@@ -750,6 +818,34 @@
   color: #fff;
 }
 
+/* Title Styles */
+  .kiluan-title {
+    color: #005f73;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .kiluan-title span.title-char {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  .kiluan-title:hover span.title-char {
+    transform: translateY(-5px);
+    color: #0088a3;
+  }
+  
+  .title-underline {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #005f73, #0088a3);
+    margin-top: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  .kiluan-title:hover ~ .title-underline {
+    width: 200px;
+  }
+
 /*============= Section Location =============*/
 .location {
   background: linear-gradient(135deg, #e0f7fa, #ffffff);
@@ -793,6 +889,144 @@
   background-color: #005f73;
   color: #fff;
 }
+
+/* Title Styles */
+  .kiluan-title {
+    color: #005f73;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .kiluan-title span.title-char {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  .kiluan-title:hover span.title-char {
+    transform: translateY(-5px);
+    color: #0088a3;
+  }
+  
+  .title-underline {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #005f73, #0088a3);
+    margin-top: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  .kiluan-title:hover ~ .title-underline {
+    width: 200px;
+  }
+
+/*============= Section Informasi =============*/
+   body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .profile-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .section-title {
+            color: #005f73;
+            border-bottom: 3px solid  #005f73;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .feature-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .fact-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .fact-icon {
+            font-size: 2rem;
+            color: #005f73;
+            margin-bottom: 1rem;
+        }
+        
+        .back-btn {
+            background-color:  #005f73;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 2rem;
+            transition: background-color 0.3s;
+        }
+        
+        .back-btn:hover {
+            background-color: #004445;
+            color: white;
+        }
+        
+        .gallery-img {
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.03);
+        }
+        
+        .staff-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .staff-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .staff-position {
+            color: #6c757d;
+            font-weight: 500;
+        }
+        
+        .table-responsive {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .table thead {
+            background-color: #005f73;
+            color: white;
+        }
 
 /*============= MEDIA QUERIES =============*/
 @media (max-width: 480px) {

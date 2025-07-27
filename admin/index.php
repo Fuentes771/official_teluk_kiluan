@@ -1,23 +1,26 @@
 <?php
-$isLoggedIn = isset($_SESSION['admin_id']);
-include 'koneksi.php';
-
-if (!isset($_SESSION['admin_id']) && isset($_COOKIE['remember_token'])) {
-  $token = $_COOKIE['remember_token'];
-
-  $stmt = $conn->prepare("SELECT * FROM admin_users WHERE remember_token = ? AND token_expiry > NOW()");
-  $stmt->bind_param("s", $token);
-  $stmt->execute();
-  $result = $stmt->get_result();
-
-  if ($result->num_rows == 1) {
-    $user = $result->fetch_assoc();
-
-    // Set session otomatis
-    $_SESSION['admin_id'] = $user['id'];
-    $_SESSION['admin_username'] = $user['username'];
-  }
+// Start session securely
+if (session_status() === PHP_SESSION_NONE) {
+    session_set_cookie_params([
+        'lifetime' => 86400,
+        'path' => '/',
+        'domain' => $_SERVER['HTTP_HOST'],
+        'secure' => true,
+        'httponly' => true,
+        'samesite' => 'Strict'
+    ]);
+    session_start();
 }
+
+// Cek apakah admin sudah login
+if (!isset($_SESSION['admin_id'])) {
+    // Jika belum login, redirect ke halaman login
+    header("Location: login.php");
+    exit(); // Pastikan tidak ada kode yang dieksekusi setelah redirect
+}
+
+$isLoggedIn = true; // Karena sudah dipastikan login di atas
+include 'koneksi.php';
 
 $productsQuery = "SELECT * FROM products ORDER BY created_at DESC";
 $productsResult = $conn->query($productsQuery);
@@ -27,7 +30,7 @@ $productsResult = $conn->query($productsQuery);
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard Admin - Kiluan Negeri</title>
+  <title>Dashboard Adin - Kiluan Negeri</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
 </head>
