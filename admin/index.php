@@ -31,8 +31,8 @@ $productsResult = $conn->query($productsQuery);
 <head>
   <meta charset="UTF-8">
   <title>Dashboard Admin - Kiluan Negeri</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css?v=2" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkit.js?v=2" crossorigin="anonymous"></script>
 </head>
   <?php include 'navbar.php'; ?>
 <body class="bg-light">
