@@ -90,13 +90,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     // Sanitize and prepare data
     $data = [
-        'name' => $this->sanitizeInput($_POST['name']),
-        'description' => $this->sanitizeInput($_POST['description']),
+        'name' => sanitizeInput($_POST['name']),
+        'description' => sanitizeInput($_POST['description']),
         'price' => (float)$_POST['price'],
-        'type' => $this->sanitizeInput($_POST['type']),
-        'owner' => isset($_POST['owner']) ? $this->sanitizeInput($_POST['owner']) : null,
-        'location' => isset($_POST['location']) ? $this->sanitizeInput($_POST['location']) : null,
-        'phone' => isset($_POST['phone']) ? $this->sanitizeInput($_POST['phone']) : null
+        'type' => sanitizeInput($_POST['type']),
+        'owner' => isset($_POST['owner']) ? sanitizeInput($_POST['owner']) : null,
+        'location' => isset($_POST['location']) ? sanitizeInput($_POST['location']) : null,
+        'phone' => isset($_POST['phone']) ? sanitizeInput($_POST['phone']) : null
     ];
     
     // Process featured image upload if changed
@@ -108,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 @unlink("../assets/images/" . $product['featured_image']);
             }
             
-            $featuredImage = $this->processImageUpload($_FILES['featured_image'], 'featured_');
+            $featuredImage = processImageUpload($_FILES['featured_image'], 'featured_');
         } catch (Exception $e) {
             http_response_code(400);
             die(json_encode(['status' => 'error', 'message' => $e->getMessage()]));
@@ -155,20 +155,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Process facilities if provided
         if (!empty($_POST['facilities'])) {
             $facilityStmt = $conn->prepare("INSERT INTO product_facilities 
-                (product_id, facility, icon, image, created_at) 
-                VALUES (?, ?, ?, ?, NOW())");
+                (product_id, facility, icon, image) 
+                VALUES (?, ?, ?, ?)");
             
             foreach ($_POST['facilities'] as $index => $facility) {
                 if (empty($facility['name'])) continue;
                 
-                $facilityName = $this->sanitizeInput($facility['name']);
-                $icon = $this->sanitizeInput($facility['icon'] ?? 'fa-check');
+                $facilityName = sanitizeInput($facility['name']);
+                $icon = sanitizeInput($facility['icon'] ?? 'fa-check');
                 $facilityImage = null;
                 
                 // Process new facility image upload
                 if (!empty($_FILES['facilities_images']['name'][$index])) {
                     try {
-                        $facilityImage = $this->processImageUpload([
+                        $facilityImage = processImageUpload([
                             'name' => $_FILES['facilities_images']['name'][$index],
                             'type' => $_FILES['facilities_images']['type'][$index],
                             'tmp_name' => $_FILES['facilities_images']['tmp_name'][$index],
