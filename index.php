@@ -118,20 +118,14 @@ require 'includes/config.php';
                 atraksi lumba-lumba liar langsung di habitatnya.
               </p>
               <div class="button-group">
-                <button class="kiluan-btn" onclick="window.open('http://monitoring.pekontelukkiluan.com', '_blank')">
+                <button class="kiluan-btn" onclick="window.open('https://monitoring.pekontelukkiluan.com', '_blank')">
                   <span>Monitoring Teluk Kiluan</span>
                   <svg viewBox="0 0 13 10" height="10px" width="15px">
                     <path d="M1,5 L11,5"></path>
                     <polyline points="8 1 12 5 8 9"></polyline>
                   </svg>
                 </button>
-               <a href="info-selengkapnya.php" class="kiluan-btn" style="text-decoration: none;">
-                  <span>Lihat Profil Lengkap</span>
-                  <svg viewBox="0 0 13 10" height="10px" width="15px">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                  </svg>
-                </a>
+               
                 <button class="kiluan-btn" onclick="window.open('https://www.instagram.com/kiluan_negeri/', '_blank')">
                   <span>Instagram</span>
                   <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -301,59 +295,104 @@ require 'includes/config.php';
       <div class="title-underline mx-auto" style="width: 80px;"></div>
     </div>
 
-    <div class="row">
-      <!-- Item Galeri 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="card shadow-sm gallery-card">
-          <div class="card-img-container">
-            <img src="./assets/images/Pantai3.png" class="card-img-top" alt="Transpalansi Terubu Karang">
-            <div class="img-overlay">
-               <a href="detail-galeri/gigihiu.php?id=1" class="btn btn-sm btn-outline-light view-btn">Lihat Detail</a>
-            </div>
-          </div>
-          <div class="card-body">
-            <small class="text-muted date-text">29/06/2024</small>
-            <h6 class="card-title fw-bold mt-2">Transpalansi Terubu Karang</h6>
-            <div class="card-footer-underline"></div>
-          </div>
+   <div class="row">
+  <!-- Item Galeri 1 -->
+  <div class="col-md-4 mb-4">
+    <div class="card shadow-sm gallery-card h-100">
+      <div class="card-img-container ratio ratio-16x9">
+        <img src="./assets/images/gapura.jpg" class="card-img-top img-cover" alt="Gapura Teluk Kiluan">
+        <div class="img-overlay">
+          <a href="detail-galeri/gapura.php?id=1" class="btn btn-sm btn-outline-light view-btn">Lihat Detail</a>
         </div>
       </div>
-
-      <!-- Item Galeri 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card shadow-sm gallery-card">
-          <div class="card-img-container">
-            <img src="./assets/images/Pantai2.png" class="card-img-top" alt="Edukasi Penanaman Mangrove">
-            <div class="img-overlay">
-              <button class="btn btn-sm btn-outline-light view-btn">Lihat Detail</button>
-            </div>
-          </div>
-          <div class="card-body">
-            <small class="text-muted date-text">30/05/2017</small>
-            <h6 class="card-title fw-bold mt-2">Edukasi Penanaman Mangrove</h6>
-            <div class="card-footer-underline"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Item Galeri 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card shadow-sm gallery-card">
-          <div class="card-img-container">
-            <img src="./assets/images/Pantai1.jpg" class="card-img-top" alt="Pendidikan dan Pelatihan">
-            <div class="img-overlay">
-              <button class="btn btn-sm btn-outline-light view-btn">Lihat Detail</button>
-            </div>
-          </div>
-          <div class="card-body">
-            <small class="text-muted date-text">30/05/2017</small>
-            <h6 class="card-title fw-bold mt-2">Pendidikan dan Pelatihan</h6>
-            <div class="card-footer-underline"></div>
-          </div>
-        </div>
+      <div class="card-body">
+        <h6 class="card-title fw-bold mt-2">Gapura Teluk Kiluan</h6>
+        <div class="card-footer-underline"></div>
       </div>
     </div>
   </div>
+
+  <!-- Item Galeri 2 -->
+  <div class="col-md-4 mb-4">
+    <div class="card shadow-sm gallery-card h-100">
+      <div class="card-img-container ratio ratio-16x9">
+        <img src="./assets/images/laguna.jpg" class="card-img-top img-cover" alt="Laguna Gayau Teluk Kiluan">
+        <div class="img-overlay">
+          <a href="detail-galeri/laguna.php?id=1" class="btn btn-sm btn-outline-light view-btn">Lihat Detail</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title fw-bold mt-2">Laguna Gayau Teluk Kiluan</h6>
+        <div class="card-footer-underline"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Item Galeri 3 -->
+  <div class="col-md-4 mb-4">
+    <div class="card shadow-sm gallery-card h-100">
+      <div class="card-img-container ratio ratio-16x9">
+        <img src="./assets/images/gigihiu.jpg" class="card-img-top img-cover" alt="Pantai Gigi Hiu">
+        <div class="img-overlay">
+          <a href="detail-galeri/gigihiu.php?id=1" class="btn btn-sm btn-outline-light view-btn">Lihat Detail</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title fw-bold mt-2">Pantai Gigi Hiu</h6>
+        <div class="card-footer-underline"></div>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <!-- Item Galeri 4 -->
+  <div class="col-md-4 mb-4">
+    <div class="card shadow-sm gallery-card h-100">
+      <div class="card-img-container ratio ratio-16x9">
+        <img src="./assets/images/dolphin.jpg" class="card-img-top img-cover" alt="Spot Lumba-Lumba">
+        <div class="img-overlay">
+          <a href="detail-galeri/dolphin.php?id=4" class="btn btn-sm btn-outline-light view-btn">Lihat Detail</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title fw-bold mt-2">Spot Lumba-Lumba</h6>
+        <div class="card-footer-underline"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Item Galeri 5 -->
+  <div class="col-md-4 mb-4">
+    <div class="card shadow-sm gallery-card h-100">
+      <div class="card-img-container ratio ratio-16x9">
+        <img src="./assets/images/pasirputih.jpg" class="card-img-top img-cover" alt="Pantai Pasir Putih">
+        <div class="img-overlay">
+          <a href="detail-galeri/pasirputih.php?id=1" class="btn btn-sm btn-outline-light view-btn">Lihat Detail</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title fw-bold mt-2">Pantai Pasir Putih</h6>
+        <div class="card-footer-underline"></div>
+      </div>
+    </div>
+  </div>
+
+<!-- Item Galeri 3 -->
+  <div class="col-md-4 mb-4">
+    <div class="card shadow-sm gallery-card h-100">
+      <div class="card-img-container ratio ratio-16x9">
+        <img src="./assets/images/gigihiu.jpg" class="card-img-top img-cover" alt="Pulau">
+        <div class="img-overlay">
+          <a href="detail-galeri/kelapa.php?id=1" class="btn btn-sm btn-outline-light view-btn">Lihat Detail</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title fw-bold mt-2">Pulau Kelapa</h6>
+        <div class="card-footer-underline"></div>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 
 <!-- Section Produk Start -->

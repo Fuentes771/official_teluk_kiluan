@@ -7,7 +7,7 @@ require '../includes/header.php';?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Galeri - Pantai Gigi Hiu</title>
+    <title>Detail Galeri - Gapura Teluk Kiluan</title>
     
     <!-- Menghubungkan file CSS eksternal -->
     <link href="../assets/css/detail.css?v=2" rel="stylesheet">
@@ -20,6 +20,7 @@ require '../includes/header.php';?>
     <!-- css Link -->
     <link href="../assets/css/bootstrap.min.css?v=2" rel="stylesheet">
     <link href="../assets/css/style.css?v=2" rel="stylesheet">
+        <link href="../assets/css/detail.css?v=2" rel="stylesheet">
 
     <!-- AOS Library -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -61,12 +62,12 @@ require '../includes/header.php';?>
 </nav>
 <!-- Navbar End -->
     <!-- Hero Section -->
-    <section class="hero-section text-center gigihiu-hero">
+    <section class="hero-section text-center gapura-hero">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h1 class="gallery-title display-4 mb-3">Pantai Gigi Hiu</h1>
-                    <p class="lead mb-4">Keindahan Batu Karang yang Menyerupai Gigi Hiu di Teluk Kiluan</p>
+                    <h1 class="gallery-title display-4 mb-3">Gapura Teluk Kiluan</h1>
+                    <p class="lead mb-4">Pintu Gerbang Menuju Keindahan Alam Teluk Kiluan</p>
                     <span class="badge location-badge p-2">
                         <i class="fas fa-map-marker-alt me-2"></i> Teluk Kiluan, Lampung Selatan
                     </span>
@@ -83,28 +84,28 @@ require '../includes/header.php';?>
                 <!-- Description Section -->
                 <section class="mb-5">
                     <h2 class="section-title">Deskripsi</h2>
-                    <p class="lead">Pantai Gigi Hiu adalah salah satu destinasi wisata unggulan di Teluk Kiluan yang terkenal dengan formasi batu karangnya yang unik menyerupai gigi hiu.</p>
+                    <p class="lead">Gapura Teluk Kiluan merupakan ikon pariwisata yang menjadi simbol penyambutan bagi para wisatawan yang datang menikmati keindahan alam Teluk Kiluan.</p>
                     
-                    <p>Pantai ini menawarkan pemandangan spektakuler dengan deretan batu karang besar yang muncul dari permukaan laut, membentuk formasi yang menakjubkan. Batu-batu karang ini terbentuk secara alami melalui proses abrasi selama ribuan tahun, menciptakan pemandangan yang sangat fotogenik terutama saat matahari terbit atau terbenam.</p>
+                    <p>Gapura ini dibangun dengan arsitektur tradisional Lampung yang khas, menggambarkan kekayaan budaya dan keindahan alam daerah ini. Dengan tinggi 8 meter dan lebar 12 meter, gapura ini menjadi spot foto favorit para pengunjung.</p>
                     
-                    <p>Nama "Gigi Hiu" diberikan karena bentuk batu karang yang runcing dan tajam menyerupai gigi hiu. Pantai ini memiliki pasir putih yang bersih dan air laut yang jernih, menjadikannya tempat yang sempurna untuk berfoto, bersantai, dan menikmati keindahan alam.</p>
+                    <p>Lokasi gapura yang strategis di pintu masuk kawasan wisata Teluk Kiluan membuatnya menjadi landmark yang mudah dikenali. Di sekitar gapura terdapat taman yang tertata rapi dengan berbagai tanaman khas daerah yang menambah keindahan tempat ini.</p>
                     
                     <div class="row mt-4">
                         <div class="col-md-6">
                             <div class="info-card h-100">
                                 <div class="card-body text-center">
-                                    <i class="fas fa-sun card-icon"></i>
+                                    <i class="fas fa-calendar-alt card-icon"></i>
                                     <h5>Waktu Terbaik Berkunjung</h5>
-                                    <p class="mb-0">April - September saat cuaca cerah dan ombak tenang</p>
+                                    <p class="mb-0">Pagi hari (06.00-09.00) atau sore hari (15.00-18.00) untuk pencahayaan foto terbaik</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="info-card h-100">
                                 <div class="card-body text-center">
-                                    <i class="fas fa-clock card-icon"></i>
-                                    <h5>Jam Kunjungan</h5>
-                                    <p class="mb-0">06.00 - 18.00 WIB (terbaik saat sunrise atau sunset)</p>
+                                    <i class="fas fa-users card-icon"></i>
+                                    <h5>Pengunjung</h5>
+                                    <p class="mb-0">Rata-rata 500-1000 pengunjung per hari di akhir pekan</p>
                                 </div>
                             </div>
                         </div>
@@ -125,27 +126,27 @@ require '../includes/header.php';?>
                         </div>
                         <div class="carousel-inner rounded">
                             <div class="carousel-item active">
-                                <img src="./assets/images/gigihiu1.jpg" class="d-block w-100" alt="Pantai Gigi Hiu">
+                                <img src="./assets/images/gapura1.jpg" class="d-block w-100" alt="Gapura Teluk Kiluan">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <p>Pemandangan utama Pantai Gigi Hiu</p>
+                                    <p>Gapura Teluk Kiluan di pagi hari</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="./assets/images/gigihiu2.jpg" class="d-block w-100" alt="Formasi Batu Karang">
+                                <img src="./assets/images/gapura2.jpg" class="d-block w-100" alt="Gapura dengan latar laut">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <p>Formasi batu karang yang unik</p>
+                                    <p>Gapura dengan latar belakang laut</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="./assets/images/gigihiu3.jpg" class="d-block w-100" alt="Sunset di Gigi Hiu">
+                                <img src="./assets/images/gapura3.jpg" class="d-block w-100" alt="Detail arsitektur gapura">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <p>Matahari terbenam di Pantai Gigi Hiu</p>
+                                    <p>Detail arsitektur tradisional gapura</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="./assets/images/gigihiu4.jpg" class="d-block w-100" alt="Pasir Putih">
+                                <img src="./assets/images/gapura4.jpg" class="d-block w-100" alt="Gapura di malam hari">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <p>Pasir putih yang bersih</p>
+                                    <p>Gapura dengan pencahayaan malam</p>
                                 </div>
                             </div>
                         </div>
@@ -162,23 +163,23 @@ require '../includes/header.php';?>
                     <!-- Thumbnail Gallery -->
                     <div class="row">
                         <div class="col-6 col-md-3">
-                            <a href="./assets/images/gigihiu1.jpg" data-lightbox="gallery" data-title="Pantai Gigi Hiu">
-                                <img src="./assets/images/gigihiu1-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 1">
+                            <a href="./assets/images/gapura1.jpg" data-lightbox="gallery" data-title="Gapura Teluk Kiluan">
+                                <img src="./assets/images/gapura1-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 1">
                             </a>
                         </div>
                         <div class="col-6 col-md-3">
-                            <a href="./assets/images/gigihiu2.jpg" data-lightbox="gallery" data-title="Formasi Batu Karang">
-                                <img src="./assets/images/gigihiu2-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 2">
+                            <a href="./assets/images/gapura2.jpg" data-lightbox="gallery" data-title="Gapura dengan latar laut">
+                                <img src="./assets/images/gapura2-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 2">
                             </a>
                         </div>
                         <div class="col-6 col-md-3">
-                            <a href="./assets/images/gigihiu3.jpg" data-lightbox="gallery" data-title="Sunset di Gigi Hiu">
-                                <img src="./assets/images/gigihiu3-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 3">
+                            <a href="./assets/images/gapura3.jpg" data-lightbox="gallery" data-title="Detail arsitektur">
+                                <img src="./assets/images/gapura3-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 3">
                             </a>
                         </div>
                         <div class="col-6 col-md-3">
-                            <a href="./assets/images/gigihiu4.jpg" data-lightbox="gallery" data-title="Pasir Putih">
-                                <img src="./assets/images/gigihiu4-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 4">
+                            <a href="./assets/images/gapura4.jpg" data-lightbox="gallery" data-title="Gapura malam hari">
+                                <img src="./assets/images/gapura4-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 4">
                             </a>
                         </div>
                     </div>
@@ -188,18 +189,18 @@ require '../includes/header.php';?>
                 <section class="mb-5">
                     <h2 class="section-title">Video Dokumentasi</h2>
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/example-gigihiu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/example-gapura" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <p class="text-muted">Video keindahan Pantai Gigi Hiu dari berbagai sudut pandang.</p>
+                    <p class="text-muted">Video sejarah pembangunan Gapura Teluk Kiluan dan keindahan sekitarnya.</p>
                 </section>
 
                 <!-- Landscape Photo -->
                 <section class="mb-5">
-                    <h2 class="section-title">Pemandangan Panorama</h2>
+                    <h2 class="section-title">Pemandangan Sekitar</h2>
                     <div class="landscape-photo">
-                        <img src="./assets/images/gigihiu-panorama.jpg" class="img-fluid w-100" alt="Panorama Pantai Gigi Hiu">
+                        <img src="./assets/images/gapura-panorama.jpg" class="img-fluid w-100" alt="Panorama Gapura Teluk Kiluan">
                     </div>
-                    <p>Pemandangan panorama Pantai Gigi Hiu yang menakjubkan dengan formasi batu karang yang unik dan air laut yang jernih. Tempat ini sangat populer di kalangan fotografer dan influencer karena pemandangannya yang instagramable.</p>
+                    <p>Pemandangan panorama sekitar Gapura Teluk Kiluan yang menakjubkan dengan latar belakang perbukitan dan laut biru yang memesona. Area ini sering menjadi latar foto pre-wedding dan foto keluarga karena pemandangannya yang instagramable.</p>
                 </section>
             </div>
 
@@ -212,24 +213,24 @@ require '../includes/header.php';?>
                             <h4 class="mb-4 text-center"><i class="fas fa-info-circle me-2 text-primary"></i> Fakta Cepat</h4>
                             <ul class="list-unstyled">
                                 <li class="mb-3">
-                                    <strong><i class="fas fa-map-marked-alt me-2 text-secondary"></i> Lokasi:</strong>
-                                    <span class="float-end">Teluk Kiluan, Lampung Selatan</span>
+                                    <strong><i class="fas fa-calendar-day me-2 text-secondary"></i> Dibangun:</strong>
+                                    <span class="float-end">Tahun 2018</span>
                                 </li>
                                 <li class="mb-3">
-                                    <strong><i class="fas fa-ruler-combined me-2 text-secondary"></i> Luas Area:</strong>
-                                    <span class="float-end">± 2 hektar</span>
+                                    <strong><i class="fas fa-ruler-combined me-2 text-secondary"></i> Ukuran:</strong>
+                                    <span class="float-end">Tinggi 8m, Lebar 12m</span>
                                 </li>
                                 <li class="mb-3">
-                                    <strong><i class="fas fa-route me-2 text-secondary"></i> Jarak dari Bandar Lampung:</strong>
-                                    <span class="float-end">± 60 km</span>
+                                    <strong><i class="fas fa-archway me-2 text-secondary"></i> Gaya Arsitektur:</strong>
+                                    <span class="float-end">Tradisional Lampung</span>
                                 </li>
                                 <li class="mb-3">
-                                    <strong><i class="fas fa-clock me-2 text-secondary"></i> Waktu Tempuh:</strong>
-                                    <span class="float-end">2-3 jam perjalanan</span>
+                                    <strong><i class="fas fa-camera me-2 text-secondary"></i> Spot Foto:</strong>
+                                    <span class="float-end">Favorit Wisatawan</span>
                                 </li>
                                 <li class="mb-3">
-                                    <strong><i class="fas fa-ticket-alt me-2 text-secondary"></i> Tiket Masuk:</strong>
-                                    <span class="float-end">Rp 10.000/orang</span>
+                                    <strong><i class="fas fa-sign me-2 text-secondary"></i> Fungsi:</strong>
+                                    <span class="float-end">Pintu Masuk Wisata</span>
                                 </li>
                             </ul>
                         </div>
@@ -243,25 +244,28 @@ require '../includes/header.php';?>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.1234567890!2d105.1234567!3d-5.1234567" allowfullscreen="" loading="lazy"></iframe>
                             </div>
                             <p class="mb-1"><strong>Koordinat:</strong> -5.1234° LS, 105.5678° BT</p>
-                            <p class="mb-1"><strong>Akses:</strong> Jalan darat + trekking singkat</p>
-                            <p><strong>Fasilitas:</strong> Area parkir, warung makan, toilet</p>
+                            <p class="mb-1"><strong>Jarak dari Bandara:</strong> 45 km</p>
+                            <p><strong>Akses:</strong> 1.5 jam perjalanan dari Bandar Lampung</p>
                         </div>
                     </div>
 
-                    <!-- Tips for Visitors -->
+                    <!-- Contact/Partners -->
                     <div class="info-card">
                         <div class="card-body">
-                            <h4 class="mb-4 text-center"><i class="fas fa-lightbulb me-2 text-primary"></i> Tips untuk Pengunjung</h4>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Bawa sunscreen dan topi</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Gunakan sepatu yang nyaman</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Bawa kamera/HP dengan baterai penuh</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Datang pagi atau sore untuk menghindari panas</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Jaga kebersihan lingkungan</li>
+                            <h4 class="mb-4 text-center"><i class="fas fa-handshake me-2 text-primary"></i> Pengelola</h4>
+                            <div class="text-center mb-3">
+                                <img src="./assets/images/dispar-lampung.png" alt="Dinas Pariwisata" class="img-fluid mb-2" style="max-height: 50px;">
+                                <img src="./assets/images/pemda-lampung.png" alt="Pemda Lampung" class="img-fluid mb-2" style="max-height: 50px;">
+                            </div>
+                            <p>Gapura Teluk Kiluan dikelola oleh:</p>
+                            <ul>
+                                <li>Dinas Pariwisata Lampung Selatan</li>
+                                <li>Pemerintah Desa Kiluan</li>
+                                <li>Komunitas Sadar Wisata Kiluan</li>
                             </ul>
-                            <div class="d-grid gap-2 mt-3">
-                                <a href="#" class="btn btn-primary"><i class="fas fa-route me-2"></i> Panduan Rute</a>
-                                <a href="#" class="btn btn-outline-secondary"><i class="fas fa-camera me-2"></i> Spot Foto Terbaik</a>
+                            <div class="d-grid gap-2">
+                                <a href="#" class="btn btn-primary"><i class="fas fa-info-circle me-2"></i> Info Wisata</a>
+                                <a href="#" class="btn btn-outline-secondary"><i class="fas fa-route me-2"></i> Panduan Rute</a>
                             </div>
                         </div>
                     </div>
@@ -270,7 +274,7 @@ require '../includes/header.php';?>
         </div>
     </div>
 
-    <!-- Premium Bottom Left Back Button -->
+<!-- Premium Bottom Left Back Button -->
 <div class="back-to-home-bottom">
     <a href="../index.php#gallery" class="btn-back-bottom">
         <i class="fas fa-home me-2"></i>

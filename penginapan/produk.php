@@ -156,6 +156,22 @@ $images = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
         <img src="../assets/images/<?= htmlspecialchars($product['featured_image']) ?>" class="card-img-top" alt="<?= htmlspecialchars($product['name']) ?>">
       </div>
 
+      <?php if (!empty($images)): ?>
+<div class="card shadow-sm mb-4">
+  <div class="card-body">
+    <h4 class="border-bottom pb-2 mb-3">Galeri Foto Tambahan</h4>
+    <div class="row g-3">
+      <?php foreach ($images as $img): ?>
+      <div class="col-md-4 col-6">
+        <img src="../assets/images/<?= htmlspecialchars($img['image_path']) ?>" class="img-fluid rounded" alt="Gambar Tambahan">
+      </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
+
+
       <div class="card shadow-sm mb-4">
         <div class="card-body">
           <h2 class="fw-bold mb-3"><?= htmlspecialchars($product['name']) ?></h2>
@@ -169,9 +185,19 @@ $images = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
             <div class="col-md-6">
               <ul class="list-group list-group-flush">
                 <?php foreach(array_chunk($facilities, ceil(count($facilities)/2))[0] as $facility): ?>
+                <!-- Di bagian tampilan fasilitas, ubah menjadi: -->
                 <li class="list-group-item d-flex align-items-center">
-                  <i class="fas <?= htmlspecialchars($facility['icon']) ?> text-primary me-3"></i> 
-                  <?= htmlspecialchars($facility['facility']) ?>
+                  <div class="d-flex align-items-center">
+                    <i class="fas <?= htmlspecialchars($facility['icon']) ?> text-primary me-3"></i>
+                    <div>
+                      <?= htmlspecialchars($facility['facility']) ?>
+                      <?php if (!empty($facility['image'])): ?>
+                        <div class="mt-2">
+                          <img src="../assets/images/<?= htmlspecialchars($facility['image']) ?>" class="img-fluid rounded" style="max-height: 100px;" alt="Gambar Fasilitas">
+                        </div>
+                      <?php endif; ?>
+                    </div>
+                  </div>
                 </li>
                 <?php endforeach; ?>
               </ul>
@@ -258,7 +284,7 @@ Apakah tersedia untuk tanggal tersebut?
 Terima kasih.`;
 
   const encodedMessage = encodeURIComponent(message);
-  window.open(`https://wa.me/+62<?= $product['phone'] ?>?text=${encodedMessage}`, '_blank');
+  window.open(`https://wa.me/62<?= $product['phone'] ?>?text=${encodedMessage}`, '_blank');
 }
 </script>
 

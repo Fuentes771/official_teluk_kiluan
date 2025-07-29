@@ -30,7 +30,7 @@ $productsResult = $conn->query($productsQuery);
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard Adin - Kiluan Negeri</title>
+  <title>Dashboard Admin - Kiluan Negeri</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
 </head>

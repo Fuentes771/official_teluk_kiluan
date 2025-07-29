@@ -7,7 +7,7 @@ require '../includes/header.php';?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Galeri - Pantai Gigi Hiu</title>
+    <title>Detail Galeri - Laguna Gayau Teluk Kiluan</title>
     
     <!-- Menghubungkan file CSS eksternal -->
     <link href="../assets/css/detail.css?v=2" rel="stylesheet">
@@ -61,12 +61,12 @@ require '../includes/header.php';?>
 </nav>
 <!-- Navbar End -->
     <!-- Hero Section -->
-    <section class="hero-section text-center gigihiu-hero">
+    <section class="hero-section text-center laguna-hero">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h1 class="gallery-title display-4 mb-3">Pantai Gigi Hiu</h1>
-                    <p class="lead mb-4">Keindahan Batu Karang yang Menyerupai Gigi Hiu di Teluk Kiluan</p>
+                    <h1 class="gallery-title display-4 mb-3">Laguna Gayau Teluk Kiluan</h1>
+                    <p class="lead mb-4">Keindahan Laguna Tersembunyi dengan Air Biru Kehijauan</p>
                     <span class="badge location-badge p-2">
                         <i class="fas fa-map-marker-alt me-2"></i> Teluk Kiluan, Lampung Selatan
                     </span>
@@ -83,11 +83,11 @@ require '../includes/header.php';?>
                 <!-- Description Section -->
                 <section class="mb-5">
                     <h2 class="section-title">Deskripsi</h2>
-                    <p class="lead">Pantai Gigi Hiu adalah salah satu destinasi wisata unggulan di Teluk Kiluan yang terkenal dengan formasi batu karangnya yang unik menyerupai gigi hiu.</p>
+                    <p class="lead">Laguna Gayau adalah permata tersembunyi di Teluk Kiluan yang menawarkan pesona air berwarna biru kehijauan dengan pemandangan alam yang masih sangat alami.</p>
                     
-                    <p>Pantai ini menawarkan pemandangan spektakuler dengan deretan batu karang besar yang muncul dari permukaan laut, membentuk formasi yang menakjubkan. Batu-batu karang ini terbentuk secara alami melalui proses abrasi selama ribuan tahun, menciptakan pemandangan yang sangat fotogenik terutama saat matahari terbit atau terbenam.</p>
+                    <p>Laguna ini terbentuk secara alami dengan air yang sangat jernih dan tenang, dikelilingi oleh tebing-tebing hijau yang menciptakan pemandangan spektakuler. Warna air yang berubah-ubah dari biru muda hingga hijau toska tergantung pada kedalaman dan pantulan sinar matahari, menciptakan efek visual yang memukau.</p>
                     
-                    <p>Nama "Gigi Hiu" diberikan karena bentuk batu karang yang runcing dan tajam menyerupai gigi hiu. Pantai ini memiliki pasir putih yang bersih dan air laut yang jernih, menjadikannya tempat yang sempurna untuk berfoto, bersantai, dan menikmati keindahan alam.</p>
+                    <p>Nama "Gayau" berasal dari bahasa setempat yang berarti "tenang" atau "damai", mencerminkan suasana yang ditawarkan oleh laguna ini. Tempat ini sangat cocok untuk berenang, snorkeling, atau sekadar bersantai menikmati keindahan alam yang masih perawan.</p>
                     
                     <div class="row mt-4">
                         <div class="col-md-6">
@@ -95,7 +95,7 @@ require '../includes/header.php';?>
                                 <div class="card-body text-center">
                                     <i class="fas fa-sun card-icon"></i>
                                     <h5>Waktu Terbaik Berkunjung</h5>
-                                    <p class="mb-0">April - September saat cuaca cerah dan ombak tenang</p>
+                                    <p class="mb-0">Mei - Oktober saat cuaca cerah dan air tenang</p>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +104,7 @@ require '../includes/header.php';?>
                                 <div class="card-body text-center">
                                     <i class="fas fa-clock card-icon"></i>
                                     <h5>Jam Kunjungan</h5>
-                                    <p class="mb-0">06.00 - 18.00 WIB (terbaik saat sunrise atau sunset)</p>
+                                    <p class="mb-0">08.00 - 17.00 WIB (terbaik siang hari saat matahari terik)</p>
                                 </div>
                             </div>
                         </div>
@@ -125,27 +125,27 @@ require '../includes/header.php';?>
                         </div>
                         <div class="carousel-inner rounded">
                             <div class="carousel-item active">
-                                <img src="./assets/images/gigihiu1.jpg" class="d-block w-100" alt="Pantai Gigi Hiu">
+                                <img src="./assets/images/laguna1.jpg" class="d-block w-100" alt="Pemandangan Laguna Gayau">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <p>Pemandangan utama Pantai Gigi Hiu</p>
+                                    <p>Pemandangan utama Laguna Gayau</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="./assets/images/gigihiu2.jpg" class="d-block w-100" alt="Formasi Batu Karang">
+                                <img src="./assets/images/laguna2.jpg" class="d-block w-100" alt="Air Biru Kehijauan">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <p>Formasi batu karang yang unik</p>
+                                    <p>Air biru kehijauan yang jernih</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="./assets/images/gigihiu3.jpg" class="d-block w-100" alt="Sunset di Gigi Hiu">
+                                <img src="./assets/images/laguna3.jpg" class="d-block w-100" alt="Tebing Hijau">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <p>Matahari terbenam di Pantai Gigi Hiu</p>
+                                    <p>Tebing hijau mengelilingi laguna</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="./assets/images/gigihiu4.jpg" class="d-block w-100" alt="Pasir Putih">
+                                <img src="./assets/images/laguna4.jpg" class="d-block w-100" alt="Aktivitas Snorkeling">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <p>Pasir putih yang bersih</p>
+                                    <p>Aktivitas snorkeling di laguna</p>
                                 </div>
                             </div>
                         </div>
@@ -162,23 +162,23 @@ require '../includes/header.php';?>
                     <!-- Thumbnail Gallery -->
                     <div class="row">
                         <div class="col-6 col-md-3">
-                            <a href="./assets/images/gigihiu1.jpg" data-lightbox="gallery" data-title="Pantai Gigi Hiu">
-                                <img src="./assets/images/gigihiu1-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 1">
+                            <a href="./assets/images/laguna1.jpg" data-lightbox="gallery" data-title="Pemandangan Laguna Gayau">
+                                <img src="./assets/images/laguna1-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 1">
                             </a>
                         </div>
                         <div class="col-6 col-md-3">
-                            <a href="./assets/images/gigihiu2.jpg" data-lightbox="gallery" data-title="Formasi Batu Karang">
-                                <img src="./assets/images/gigihiu2-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 2">
+                            <a href="./assets/images/laguna2.jpg" data-lightbox="gallery" data-title="Air Biru Kehijauan">
+                                <img src="./assets/images/laguna2-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 2">
                             </a>
                         </div>
                         <div class="col-6 col-md-3">
-                            <a href="./assets/images/gigihiu3.jpg" data-lightbox="gallery" data-title="Sunset di Gigi Hiu">
-                                <img src="./assets/images/gigihiu3-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 3">
+                            <a href="./assets/images/laguna3.jpg" data-lightbox="gallery" data-title="Tebing Hijau">
+                                <img src="./assets/images/laguna3-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 3">
                             </a>
                         </div>
                         <div class="col-6 col-md-3">
-                            <a href="./assets/images/gigihiu4.jpg" data-lightbox="gallery" data-title="Pasir Putih">
-                                <img src="./assets/images/gigihiu4-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 4">
+                            <a href="./assets/images/laguna4.jpg" data-lightbox="gallery" data-title="Aktivitas Snorkeling">
+                                <img src="./assets/images/laguna4-thumb.jpg" class="img-fluid gallery-thumbnail" alt="Thumbnail 4">
                             </a>
                         </div>
                     </div>
@@ -188,18 +188,18 @@ require '../includes/header.php';?>
                 <section class="mb-5">
                     <h2 class="section-title">Video Dokumentasi</h2>
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/example-gigihiu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/example-laguna" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <p class="text-muted">Video keindahan Pantai Gigi Hiu dari berbagai sudut pandang.</p>
+                    <p class="text-muted">Video keindahan Laguna Gayau dari berbagai sudut pandang.</p>
                 </section>
 
                 <!-- Landscape Photo -->
                 <section class="mb-5">
                     <h2 class="section-title">Pemandangan Panorama</h2>
                     <div class="landscape-photo">
-                        <img src="./assets/images/gigihiu-panorama.jpg" class="img-fluid w-100" alt="Panorama Pantai Gigi Hiu">
+                        <img src="./assets/images/laguna-panorama.jpg" class="img-fluid w-100" alt="Panorama Laguna Gayau">
                     </div>
-                    <p>Pemandangan panorama Pantai Gigi Hiu yang menakjubkan dengan formasi batu karang yang unik dan air laut yang jernih. Tempat ini sangat populer di kalangan fotografer dan influencer karena pemandangannya yang instagramable.</p>
+                    <p>Pemandangan panorama Laguna Gayau yang menakjubkan dengan gradasi warna air dari biru muda hingga hijau toska, dikelilingi oleh tebing-tebing hijau yang menciptakan suasana seperti di surga tersembunyi. Tempat ini semakin populer di kalangan wisatawan yang mencari ketenangan dan keindahan alam yang masih alami.</p>
                 </section>
             </div>
 
@@ -217,19 +217,23 @@ require '../includes/header.php';?>
                                 </li>
                                 <li class="mb-3">
                                     <strong><i class="fas fa-ruler-combined me-2 text-secondary"></i> Luas Area:</strong>
-                                    <span class="float-end">± 2 hektar</span>
+                                    <span class="float-end">± 1.5 hektar</span>
                                 </li>
                                 <li class="mb-3">
                                     <strong><i class="fas fa-route me-2 text-secondary"></i> Jarak dari Bandar Lampung:</strong>
-                                    <span class="float-end">± 60 km</span>
+                                    <span class="float-end">± 65 km</span>
                                 </li>
                                 <li class="mb-3">
                                     <strong><i class="fas fa-clock me-2 text-secondary"></i> Waktu Tempuh:</strong>
-                                    <span class="float-end">2-3 jam perjalanan</span>
+                                    <span class="float-end">2.5-3 jam perjalanan</span>
                                 </li>
                                 <li class="mb-3">
                                     <strong><i class="fas fa-ticket-alt me-2 text-secondary"></i> Tiket Masuk:</strong>
-                                    <span class="float-end">Rp 10.000/orang</span>
+                                    <span class="float-end">Rp 15.000/orang</span>
+                                </li>
+                                <li class="mb-3">
+                                    <strong><i class="fas fa-water me-2 text-secondary"></i> Kedalaman:</strong>
+                                    <span class="float-end">3-8 meter</span>
                                 </li>
                             </ul>
                         </div>
@@ -243,8 +247,8 @@ require '../includes/header.php';?>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.1234567890!2d105.1234567!3d-5.1234567" allowfullscreen="" loading="lazy"></iframe>
                             </div>
                             <p class="mb-1"><strong>Koordinat:</strong> -5.1234° LS, 105.5678° BT</p>
-                            <p class="mb-1"><strong>Akses:</strong> Jalan darat + trekking singkat</p>
-                            <p><strong>Fasilitas:</strong> Area parkir, warung makan, toilet</p>
+                            <p class="mb-1"><strong>Akses:</strong> Jalan darat + perahu kecil</p>
+                            <p><strong>Fasilitas:</strong> Area parkir, warung makan, toilet, penyewaan peralatan snorkeling</p>
                         </div>
                     </div>
 
@@ -253,15 +257,16 @@ require '../includes/header.php';?>
                         <div class="card-body">
                             <h4 class="mb-4 text-center"><i class="fas fa-lightbulb me-2 text-primary"></i> Tips untuk Pengunjung</h4>
                             <ul class="list-unstyled">
-                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Bawa sunscreen dan topi</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Gunakan sepatu yang nyaman</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Bawa kamera/HP dengan baterai penuh</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Datang pagi atau sore untuk menghindari panas</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Bawa perlengkapan renang/snorkeling</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Gunakan tabir surya tahan air</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Bawa kamera waterproof</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Pakai alas kaki yang nyaman untuk trekking</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Bawa uang tunai (tidak ada ATM terdekat)</li>
                                 <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Jaga kebersihan lingkungan</li>
                             </ul>
                             <div class="d-grid gap-2 mt-3">
                                 <a href="#" class="btn btn-primary"><i class="fas fa-route me-2"></i> Panduan Rute</a>
-                                <a href="#" class="btn btn-outline-secondary"><i class="fas fa-camera me-2"></i> Spot Foto Terbaik</a>
+                                <a href="#" class="btn btn-outline-secondary"><i class="fas fa-swimmer me-2"></i> Spot Snorkeling Terbaik</a>
                             </div>
                         </div>
                     </div>

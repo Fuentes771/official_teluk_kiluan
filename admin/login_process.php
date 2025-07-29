@@ -232,7 +232,7 @@ function processLogin($conn) {
     unset($_SESSION['login_attempt_' . $_SERVER['REMOTE_ADDR']]);
     
     // Redirect to dashboard
-    header("Location: dashboard.php");
+    header("Location: index.php");
     exit();
 }
 
